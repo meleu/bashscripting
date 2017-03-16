@@ -1,6 +1,6 @@
 # Summary
 
 * [Introdução](README.md)
-* [Começando](chapter01.md)
-* [Entrada e Saída](entrada-e-saida.md)
+* [1. Começando](01-comecando.md)
+* [2. Variáveis e Parâmetros](02-variaveis-e-parametros.md)
 
