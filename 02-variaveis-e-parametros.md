@@ -24,7 +24,7 @@ definido para uma outra variável e que esta seja "readonly" (mais sobre
 isso adiante). Também deve-se tomar cuidado para não fazer bobagens com
 as variáveis do shell (explicados no tópico [Variáveis do Shell](#variaveis-do-shell)).
 
-
+teste de [link](#variaveis-do-usuario).
 
 ##  Variáveis do Usuário
 
