@@ -40,7 +40,7 @@ a pouco), por exemplo:
     ./procurasuid.sh level5
 
 irá procurar por todos os arquivos suid que pertençam ao usuário level5.
-Como você deve ter reparado, esse shell script é útil nos wargames (veja [Referências](10-referencias.md)).
+Como você deve ter reparado, esse shell script é útil nos wargames (veja [Referências](../chapter-10/README.md)).
 
 De vez em quando é bom observar o que o script está fazendo. Para isso
 você pode usar alguns parâmetros junto com o shell para executar seu
