@@ -1,5 +1,22 @@
 {
     "title": "Programação em Bourne-Again Shell",
     "author": "meleu",
-    "plugins": ["codesnippet"]
+    "language": "pt",
+    "plugins": ["codesnippet", "autocover"],
+    "pluginsConfig": {
+        "autocover": {
+            "font": {
+                "size": null,
+                "family": "Impact",
+                "color": "#FFF"
+            },
+            "size": {
+                "w": 1800,
+                "h": 2360
+            },
+            "background": {
+                "color": "#09F"
+            }
+        }
+    }
 }
