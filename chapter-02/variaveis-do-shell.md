@@ -13,7 +13,7 @@ para estas variáveis (uma boa é fazer isso no seu ~/.bashrc ou
 funções.
 
 
-- `HOME`
+### `HOME`
 
    Esta variável tem um nome bem descritivo não acham? Bem... como nós já
 sabemos, o nosso diretório home é o diretório em que "caímos" assim que
@@ -47,7 +47,7 @@ aparece um til (~) logo antes do prompt. Observe este detalhe no exemplo
 acima. ;) 
 
 
-- `PATH`
+### `PATH`
 
    Esta variável armazena o caminho (path) que o shell irá percorrer para
 procurar um comando digitado pelo usuário. Exemplo:
@@ -59,6 +59,7 @@ meleu@meleu:/tmp$ echo $PATH
 
 Portanto se eu digitar um "ls" o shell irá procurar pelo "ls" em
 /usr/local/bin depois em /usr/bin e daí em diante.
+
    Esta variável algumas vezes pode ser usada no hacking! Imagine que
 um programador inexperiente tenha feito um programa suid que usa a função
 system() (ou qualquer outra função que sirva para executar um comando
@@ -66,6 +67,7 @@ externo), e nesta função ele não usa o caminho completo do programa, e
 sim apenas o nome do programa, supondo que o programa está no seu PATH
 normal. Você pode alterar o PATH e executar um outro programa de sua
 preferência.
+
    Vamos supor que o cara use:
 
    system ("date");
@@ -83,7 +85,7 @@ entender melhor.
 colocar aqui por questões históricas. :P
 
 
-- `PS1`
+### `PS1`
 
    Esta é a "Prompt String 1" ou "Primary Prompt String". Nada mais é do
 que o prompt que nos mostra que o shell está esperando um comando. Quando
@@ -113,7 +115,7 @@ basta trocar o '$' por '#' (bah! que bobagem! :P ).
 Bash-Prompt-HOWTO (ver 10. Referências)
 
 
-- `PS2`
+### `PS2`
 
    Esta é a "Secondary Prompt String". É usada quando um comando usa mais
 de uma linha. Por exemplo:
@@ -141,7 +143,7 @@ u
 caracteres especiais que o PS1 usa.
 
 
-- `MAIL`
+### `MAIL`
 
    Nada mais é do que o arquivo onde são guardados seus emails. Aqui na
 minha máquina eu uso o sendmail como servidor de email, portanto:
@@ -159,7 +161,7 @@ meleu@meleu:~$ echo $MAIL
 ```
 
 
-- `SHLVL`
+### `SHLVL`
 
    Esta variável armazena quantos shells você executou a partir da
 primeira shell.  
@@ -188,7 +190,7 @@ de um "if" por exemplo, executar o "exit" só se SHLVL for diferente de 1
 
 
 
-- `PROMPT_COMMAND`
+### `PROMPT_COMMAND`
 
    Esta é bem interessante. Ela armazena um comando que será executado
 toda hora que o prompt é exibido. Veja:
@@ -213,7 +215,7 @@ $
 aprender mais sobre isso leia o Bash-Prompt-HOWTO (v. 10. Referências).
 
 
-- `IFS`
+### `IFS`
 
    O shell usa esta variável para dividir uma string em palavras
 separadas. Normalmente o IFS é um espaço, uma tabulação (Tab) e um
@@ -241,7 +243,7 @@ se o IFS for nulo, toda essa linha será considerada uma única palavra
 
 
 
-- `RANDOM`
+### `RANDOM`
 
    Quando você exibe esta variável ("echo $RANDOM") é exibido um número
 aleatório entre 0 e 32767.
@@ -256,7 +258,7 @@ com 98 somente:
 {% codesnippet "./src/cellnumbergen.sh" %}{% endcodesnippet %}
 
 
-- Outras
+### Outras
 
    Outras variáveis que são muito usadas:
    MAILCHECK ; HISTFILE ; HOSTNAME ; LS_OPTIONS ; LS_COLOR ; MANPATH ;
