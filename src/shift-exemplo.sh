@@ -1,4 +1,6 @@
 #!/bin/bash
+# shift-example.sh
+
 echo "$#: $*"
 echo -e "executando \"shift\""
 shift

@@ -1,4 +1,5 @@
 #!/bin/bash
+# getopts.sh
 
 USAGE="Uso: `basename $0` [-h] [-n nome] [-e email]"
 

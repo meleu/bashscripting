@@ -1,4 +1,5 @@
 #!/bin/bash
+# listamigos.sh
 
 # o egrep abaixo vai pegar o arquivo "amigos.regiao"
 # sem exibir as linhas que comecem com um caractere '#'

@@ -1,4 +1,5 @@
 #!/bin/bash
+# mp3select.sh
 #
 #   "Escolhedor" de mp3z feito para ilustrar o uso do 'dialog'
 # no texto "Programação em Bourne-Again Shell".

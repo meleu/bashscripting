@@ -1,4 +1,5 @@
 #!/bin/bash
+# howto.sh
 #
 # *********************************************
 # * Script para visualizar HOWTOs rapidamente *

@@ -1,4 +1,5 @@
 #!/bin/bash
+# romano.sh
 #
 # Código baseado em um do Advanced Bash-Scripting Guide.
 # Mais informações sobre este guia em http://www.linuxdoc.org

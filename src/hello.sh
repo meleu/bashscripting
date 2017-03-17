@@ -1,4 +1,5 @@
 #!/bin/bash
+# hello.sh
 # "Hello World" usado para ilustrar o uso de funções.
 
 function quit {

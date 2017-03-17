@@ -1,4 +1,5 @@
 #!/bin/bash
+# strcmp.sh
 
 if [ "$1" = "$2" ]; then
         echo As strings são iguais.

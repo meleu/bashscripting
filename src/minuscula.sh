@@ -1,4 +1,5 @@
 #!/bin/bash
+# minuscula.sh
 # renomeia arquivos que tenham nome em maiusculas para
 # o equivalente em minusculas
 

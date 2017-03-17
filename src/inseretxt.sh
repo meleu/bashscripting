@@ -1,4 +1,5 @@
 #!/bin/bash
+# inseretxt.sh
 #
 # Muitas vezes durante a escrita do texto
 # "Programação em Bourne-Again Shell" eu precisava

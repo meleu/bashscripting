@@ -1,4 +1,5 @@
 #!/bin/bash
+# concatenar.sh
 
 [ $1 ] || { echo "Entre com o(s) nome(s) do arquivo(s)"; exit 1; }
 

@@ -1,4 +1,5 @@
 #!/bin/bash
+# breaksample.sh
 
 # `true` sempre retorna verdadeiro
 while true; do

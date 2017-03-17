@@ -1,4 +1,5 @@
 #!/bin/bash
+# menudialogtest.sh
 
 FILE=/tmp/script-$$
 

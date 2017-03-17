@@ -1,4 +1,5 @@
 #!/bin/bash
+# todo.sh
 
 PROG=`basename $0`
 EDITOR=`which vi`

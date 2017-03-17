@@ -1,4 +1,5 @@
 #!/bin/bash
+# parametros.sh
 #
 # "basename" serve para eliminar o caminho do arquivo e mostrar
 # somente o último nome dele. Neste caso: parametros.sh

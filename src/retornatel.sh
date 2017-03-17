@@ -1,4 +1,5 @@
 #!/bin/bash
+# retornatel.sh
 # tá bom, tá bom... eu sei que não é um exemplo muito útil...
 # é só pra ilustrar a utilidade de redirecionar a saída do loop
 

@@ -1,4 +1,5 @@
 #!/bin/bash
+# casetest.sh
 
 if [ -z "$1" ]; then
     echo "Entre com um parâmetro"

@@ -1,4 +1,5 @@
 #!/bin/bash
+# cellnumbergen.sh
 
 NUM="98$(echo $RANDOM)0"
 CONT=$(echo -n $NUM | wc -c)	# quantos digitos tem?

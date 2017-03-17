@@ -1,4 +1,5 @@
 #!/bin/bash
+# conta.sh
 
 function Mecho {
         echo -e "\e[1m$*\e[m"

@@ -1,4 +1,5 @@
 #!/bin/bash
+# amarelinho.sh
 # imprime amarelinho no centro da linha
 
 # A variável $COLUMNS contém o número de colunas que o terminal está

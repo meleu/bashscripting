@@ -1,4 +1,5 @@
 #!/bin/bash
+# lettest.sh
 
 if (( $# != 2 )) ; then    # poderia ser: if let "$# != 2"
         echo "Uso: `basename $0` N1 N2" 1>&2

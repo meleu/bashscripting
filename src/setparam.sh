@@ -1,4 +1,5 @@
 #!/bin/bash
+# setparam.sh
 
 echo "Os $# parâmetros passados inicialmente foram: $@"
 echo

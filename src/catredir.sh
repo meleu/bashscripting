@@ -1,4 +1,5 @@
 #!/bin/bash
+# catredir.sh
 
 NAME=`whoami`
 

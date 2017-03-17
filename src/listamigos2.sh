@@ -1,4 +1,5 @@
 #!/bin/bash
+# listamigos2.sh
 
 egrep -v "^#|^ *$" amigos.regiao |
 while read REGIAO NOMES ; do

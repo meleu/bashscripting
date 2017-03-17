@@ -1,4 +1,5 @@
 #!/bin/bash
+# maior.sh
 
 PARAM_ERR=-198 # Se for passado mais do que dois parâmetros.
 EQUAL=-199     # Retorno se os parâmetros forem iguais.

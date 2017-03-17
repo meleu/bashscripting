@@ -1,4 +1,5 @@
 #!/bin/bash
+# string_number.sh
 NUM1=1
 NUM2=00001
 

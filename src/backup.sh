@@ -1,4 +1,6 @@
 #!/bin/bash
+# backup.sh
+#
 # OBS.: Por favor melhore este script! :-)
 
 # Se o número de parâmetros for menor que 2...

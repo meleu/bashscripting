@@ -1,4 +1,5 @@
 #!/bin/bash
+# whilesample.sh
 # Script que soma os números positivos que são dados e sai do programa
 # quando é entrado -1.
 

@@ -1,4 +1,6 @@
 #!/bin/bash
+# testargs.sh
+#
 # Ao executar este script entre alguns parametros. Ex.:
 # [prompt]$ ./testargs.sh um dois tres quatro
 

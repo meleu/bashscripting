@@ -1,4 +1,5 @@
 #!/bin/bash
+# tabuada.sh
 
 if [ $# -ne 1 ]; then
     echo "Uso: `basename $0` n"

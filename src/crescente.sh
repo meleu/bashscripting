@@ -1,4 +1,6 @@
 #!/bin/bash
+# crescente.sh
+
 read -p "Entre com o primeiro número: " NUM1
 read -p "Entre com o segundo número: " NUM2
 read -p "Entre com o terceiro número: " NUM3

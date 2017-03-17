@@ -1,4 +1,6 @@
 #!/bin/bash
+# listartel.sh
+
 TempFile=/tmp/TEMP-$$
 
 # o egrep abaixo vai mostrar o arquivo agenda.tel
