@@ -16,15 +16,11 @@ execução (mais sobre permissões em http://meleu.github.io/txts/permissoes.txt
 Para que somente você (dono do arquivo) tenha permissão de execução
 para o primeiroexemplo.sh você faz:
 
-```
-chmod u+x primeiroexemplo.sh
-```
+    chmod u+x primeiroexemplo.sh
 
 Agora você pode executar o script da seguinte forma:
 
-```
-./primeiroexemplo.sh
-```
+    ./primeiroexemplo.sh
 
 Veja outro exemplo de apenas um comando (se não entender não tem problema,
 em breve tudo ficará mais claro):
@@ -41,9 +37,7 @@ comentário começa com uma cerquilha `#` e vai até o final da linha;
 parâmetro dado na linha de comando (será falado mais sobre isso daqui
 a pouco), por exemplo:
 
-```
-./procurasuid.sh level5
-```
+    ./procurasuid.sh level5
 
 irá procurar por todos os arquivos suid que pertençam ao usuário level5.
 Como você deve ter reparado, esse shell script é útil nos wargames (veja [Referências](10-referencias.md)).

@@ -29,3 +29,6 @@ as variáveis do shell (explicados no tópico [Variáveis do Shell](#variaveis-d
    As variáveis do usuário são as variáveis que você pode declarar, ler,
 inicializar e modificar. No exemplo abaixo nós criamos uma variável
 chamada "nome" e atribuímos a ela o valor "Meleu". Veja:
+
+    $ nome=Meleu
+
