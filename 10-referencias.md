@@ -43,7 +43,7 @@ Um guia sobre expressões regulares (sim! em português!). Leitura obrigatória!
 - [sed-HOWTO](http://aurelio.net/sed/sed-HOWTO/):
 Um ótimo texto ensinando sobre o sed!
 
-[Programação Shell Linux](http://www.brasport.com.br/informatica-e-tecnologia/linux/programacao-shell-linux-10a-edicao/):
+- [Programação Shell Linux](http://www.brasport.com.br/informatica-e-tecnologia/linux/programacao-shell-linux-10a-edicao/):
 Um livro interessante que ensina umas coisas legais sobre shellscript.
 O ponto forte do livro é o Apêndice sobre
 o awk, assunto que, diga-se de passagem, é
