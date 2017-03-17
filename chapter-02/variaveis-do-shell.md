@@ -81,6 +81,7 @@ Agora é só alterar o PATH para que procure primeiro no diretório onde
 você salvou o SEU date, e então executar o programa suid feito pelo
 incompetente programador. Faça uns testes aí que você vai me
 entender melhor.
+
    Esta situação é bem difícil de se encontrar hoje em dia, resolvi
 colocar aqui por questões históricas. :P
 
@@ -247,8 +248,8 @@ se o IFS for nulo, toda essa linha será considerada uma única palavra
 
    Quando você exibe esta variável ("echo $RANDOM") é exibido um número
 aleatório entre 0 e 32767.
-   Pra que serve isso?
-   Sei lá! Várias coisas. Quem é criativo sempre precisa de um número
+
+Pra que serve isso? Várias coisas. Quem é criativo sempre precisa de um número
 aleatório... Imagine que você queira um número de telefone celular
 qualquer (sei lá pra quê!), você pode fazer um script que gera um número
 desse pra você. Aqui na minha região estes números começam com 99 ou 98,
