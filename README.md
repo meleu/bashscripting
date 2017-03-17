@@ -113,3 +113,5 @@ licenciante a apoiar você ou o seu uso.
 - **CompartilhaIgual**: Se você remixar, transformar, ou criar a partir
 do material, tem de distribuir as suas contribuições sob a mesma
 licença que o original. 
+
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional</a>.
