@@ -23,9 +23,8 @@ nome
 Meleu não eh meleca!
 ```
 
-   Existe diferença entre usar 'aspas simples', "aspas duplas", `crases` e
-não usar nada.
-Veja isto:
+   Existe diferença entre usar `'aspas simples'`, `"aspas duplas"`, <code>&grave;crases&grave;</code> e
+não usar nada.  Veja isto:
 
 ```
 [prompt]$ caminho='O meu path eh: $PATH'
@@ -72,7 +71,7 @@ tem a capacidade de ver o conteúdo de uma variável
 
 Podemos usar `$(cifrão-parênteses)` no lugar das crases, mas por uma questão de
 clareza de código, recomenda-se fortemente que se use `$(cifrão-parênteses)`
-no lugar de `` `crases` ``. Veja alguns exemplos:
+no lugar de <code>&grave;crases&grave;</code>. Veja alguns exemplos:
 
 ```
 [prompt]$ dir_atual=$(pwd)
