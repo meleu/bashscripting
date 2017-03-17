@@ -9,7 +9,7 @@ o interpretador.
 
 Veja um exemplo de script:
 
-{% codesnippet "./src/primeiroexemplo.sh" %}{% endcodesnippet %}
+{% codesnippet "./src/primeiroexemplo.sh", language="bash" %}{% endcodesnippet %}
 
 Para que se possa executar um shell script é necessário permissão de
 execução (mais sobre permissões em http://meleu.github.io/txts/permissoes.txt).
