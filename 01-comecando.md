@@ -9,14 +9,7 @@ o interpretador.
 
 Veja um exemplo de script:
 
-```bash
-#!/bin/bash
-echo 'Alo mamãe!'
-echo
-echo 'Agora executarei um simples "ls -l", veja: '
-echo
-ls -l
-```
+{{ ./src/primeiroexemplo.sh }}
 
 Para que se possa executar um shell script é necessário permissão de
 execução (mais sobre permissões em http://meleu.github.io/txts/permissoes.txt).
