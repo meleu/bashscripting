@@ -54,7 +54,7 @@ completa (e grande também)! Use-a como referência.
 
 Para sua comodidade eu coloquei os códigos desse texto disponíveis em https://github.com/meleu/bashscripting/tree/master/src. Os códigos que tem uma serventia além da pura didática, estão em https://github.com/meleu/bashscripting/tree/master/src/bacanas.
 
-**Atenção nas versões em que eu fiz os meus testes**, pois em versões antigas
+**Atenção nas versões do bash em que eu fiz os meus testes**, pois em versões antigas
 algumas coisas podem não funcionar. 
 
 Esta é a versão que usei para testar no Cygwin:
