@@ -1,5 +1,7 @@
 # Introdução
 
+A versão de leitura amigável deste texto está disponível aqui: https://meleu.gitbooks.io/bashscripting/content/
+
 ---
 
 Este texto foi originalmente escrito em 2002, época que eu tinha muito tempo
