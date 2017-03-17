@@ -1,0 +1,443 @@
+3. Entrada e Saída (I/O)
+   *********************
+
+   Comunicando-se...
+
+
+
+3.1. echo
+     ====
+
+   Nos já usamos o echo para escrever na tela, mas aqui vamos tratar de
+alguns "segredinhos" (que não são tão secretos assim).
+
+   Existem alguns momentos que você não quer que a saída do echo pule de
+linha automaticamente. Para isso use o parâmetro "-n". Este parâmetro é
+útil quando você vai entrar com algo após o echo. Veja este script:
+
+/* ----------------- */
+<++> BashScript/filetype.sh
+#!/bin/bash
+echo -n "Entre com o nome do arquivo: "
+read FILE
+echo "Tipo do arquivo `file $FILE`"
+<-->
+/* ----------------- */
+
+Execute e veja o resultado.
+
+
+   Muita atenção deve ser tomada ao usar o echo, pois as aspas que você
+pode vir a deixar de usar podem fazer uma diferença danada (em alguns
+casos isso pode ser muito útil).
+
+/* -=-=-= exemplo =-=-=- */
+$ echo uma    boa   rede de irc     que conheco eh     irc.linux.org
+uma boa rede de irc que conheco eh irc.linux.org
+$ echo "uma    boa   rede de irc     que conheco eh     irc.linux.org"
+uma    boa   rede de irc     que conheco eh     irc.linux.org
+$
+$ # agora um exemplo com variavel
+$
+$ TESTE="primeira linha da variavel
+> segunda linha
+> terceira...
+> chega! :)
+> "
+$ echo $TESTE
+primeira linha da variavel segunda linha terceira... chega! :)
+$ echo "$TESTE"
+primeira linha da variavel
+segunda linha
+terceira...
+chega! :)
+
+/* -=-=-= exemplo =-=-=- */
+
+
+   A esta altura você já deve ter se perguntado "Como faço para imprimir
+caracteres nova linha ou beep?!". Os mais malandrinhos devem ter tentado um
+contra-barra (backslash) '\', mas você não pode simplesmente fazer isso.
+É necessário usar o parâmetro "-e" com o echo. Este parâmetro permite que
+usemos sequências de escape contra-barra.
+   As sequências são iguais a da linguagem C, exemplo: \n para nova
+linha, \a para beep, \b para backspace, etc...
+   Veja este exemplo:
+
+/* -=-=-= exemplo =-=-=- */
+$ echo -e "module caiu de cara tentando \"top soul\".\nQue paia\a"!
+module caiu de cara tentando "top soul".
+Que paia!
+/* -=-=-= exemplo =-=-=- */
+
+   O -e é também usado para escrever coloridinho (ai que fofo!), e outras
+coisas interessantes. Veremos isso no tópico seguinte.
+
+
+
+3.1.1 Sequências de Escape ANSI
+      -------------------------
+
+   Para usar cores a sequência de escape é "\e[<NUM>m" (os sinais '<' e '>'
+não entram!). Veja um exemplo (mais a frente você verá tabelas com os
+significados destas sequências):
+
+/* ----------------- */
+<++> BashScript/amarelinho.sh
+#!/bin/bash
+# imprime amarelinho no centro da linha
+
+# A variável $COLUMNS contém o número de colunas que o terminal está
+# usando, e antes de executar este script você precisa exportá-la:
+# [prompt]$ export COLUMNS
+[ $COLUMNS ] || {
+	echo Você precisa exportar a variável \"COLUMNS\":
+	echo "Tente \"export COLUMNS\" e tente executar novamente"
+	exit 1
+}
+
+POSICAO=$[ ( $COLUMNS - `expr length "$*"` ) / 2 ]
+# `expr length "$*"` retorna o número de caracteres digitados
+# como parâmetros.
+
+echo -e "\e[${POSICAO}C\e[33;1m$*\e[0m"
+
+<-->
+/* ----------------- */
+
+   Agora uma explicação ligeira: o \e diz ao echo que o que vem depois é
+uma sequência de escape.
+   Se você der a sequência '[<num>C', onde num é um número qualquer, o
+cursor vai andar "num" caraceteres para a direita. Acima eu uso a variável
+POSICAO para mover o cursor para o centro da linha (veja o cálculo no
+código).
+   O comando '[<num>m' muda para a cor "num". Cada cor tem um código
+próprio. No exemplo acima o 33 faz ficar marrom, porém combinando com o 1
+fica amarelo (isso no modo texto, pois no xterm, por exemplo, o 1 faz o
+marrom ficar em negrito. veja OBSERVAÇÕES mais adiante).
+
+   Veja uma tabela com os códigos de movimentação de cursor que eu conheço
+(os caracteres '<' e '>' devem ser ignorados):
+
+   ,-------------,------------------------------------------------,
+   |   Código    |         O que faz                              |
+   |-------------|------------------------------------------------|
+   | \e[<N>A     | Move o cursor N linhas acima.                  |
+   |-------------|------------------------------------------------|
+   | \e[<N>B     | Move o cursor N linhas abaixo.                 |
+   |-------------|------------------------------------------------|
+   | \e[<N>C     | Move o cursor N colunas à direita.             |
+   |-------------|------------------------------------------------|
+   | \e[<N>D     | Move o cursor N colunas à esquerda.            |
+   |-------------|------------------------------------------------|
+   | \e[<N>E     | Move o cursor N linhas para baixo na coluna 1. |
+   |-------------|------------------------------------------------|
+   | \e[<N>F     | Move o cursor N linhas para cima na coluna 1.  |
+   |-------------|------------------------------------------------|
+   | \e[<N>G     | Coloca o cursor na linha N.                    |
+   |-------------|------------------------------------------------|
+   | \e[<L>;<C>H | Coloca o cursor na linha L e na coluna C.      |
+   |-------------|------------------------------------------------|
+   | \e[<N>I     | Move o cursor N tabulações à direita.          |
+   |-------------|------------------------------------------------|
+   |             | N=0  Apaga do cursor até o fim da tela;        |
+   | \e[<N>J     | N=1  Apaga do cursor até o início da tela;     |
+   |             | N=2  Apaga a tela toda.                        |
+   |-------------|------------------------------------------------|
+   |             | N=0  Apaga do cursor até fim da linha;         |
+   | \e[<N>K     | N=1  Apaga do cursor até o início da linha;    |
+   |             | N=2  Apaga a linha toda.                       |
+   |-------------|------------------------------------------------|
+   | \e[<N>L     | Adiciona N linhas em branco abaixo da atual.   |
+   |-------------|------------------------------------------------|
+   | \e[<N>M     | Apaga N linhas abaixo da atual.                |
+   |-------------|------------------------------------------------|
+   | \e[<N>P     | Apaga N caracteres a direita.                  |
+   |-------------|------------------------------------------------|
+   | \e[<N>S     | Move a tela N linhas para cima.                |
+   |-------------|------------------------------------------------|
+   | \e[<N>T     | Move a tela N linhas para baixo.               |
+   |-------------|------------------------------------------------|
+   | \e[<N>X     | Limpa N caracteres à direita (com espaços).    |
+   |-------------|------------------------------------------------|
+   | \e[<N>@     | Adiciona N espaços em branco.                  |
+   |-------------|------------------------------------------------|
+   | \e[s        | Salva a posição do cursor.                     |
+   |-------------|------------------------------------------------|
+   | \e[u        | Restaura a posição do cursor que foi salva.    |
+   '-------------'------------------------------------------------'
+
+   Sim, a lista é grande... Faça uns testes para praticar um pouquinho.
+
+   Agora uma tabelinha dos atributos e seus números (N deve estar no
+formato "\e[<N>m"):
+
+     ,-----------------------------,----,-------------,---,
+     | Atributo                    | N  | Cor         | X |
+     |-----------------------------|----|-------------|---|
+     | Desligar todos atributos    | 0  | Preto       | 0 |
+     | Negrito                     | 1  | Vermelho    | 1 |
+     | Cor X para o primeiro plano | 3X | Verde       | 2 |
+     | Cor X para o segundo plano  | 4X | Marrom      | 3 |
+     | Sublinhado                  | 4  | Azul        | 4 |
+     | Piscando (blink)            | 5  | Roxo        | 5 |
+     | Vídeo reverso               | 7  | Ciano       | 6 |
+     |             -x-             | -- | Branco      | 7 |
+     '-----------------------------'----'-------------'---'
+
+OBSERVAÇÕES:
+   -> Negrito, Sublinhado e Piscando possuem comportamentos diferentes no
+console e nos emuladores de terminal. Principalmente quando temos negrito
+sendo usado com cores.
+   Por exemplo, o código "\e[33m" irá ativar o marrom mas se for usado
+(no console!) com o atributo de negrito ficará amarelo, e o código será
+assim: "\e[1;33m". Por isso faça os testes que você descobrirá as cores
+   -> Estas tabelas eu fiz graças a uma matéria que o aurélio escreveu
+sobre isso. Veja em http://verde666.org/coluna/
+
+
+   No tópico "6.1 Funções como comandos" você verá o Mfunctions, ele
+contém uma função que mostra todas as combinações de cores possíveis.
+
+
+
+3.2. read
+     ====
+
+   Como você viu no script anterior para entrar com um dado usa-se "read".
+O read tem alguns "macetinhos". Pra começar: você não precisa colocar um
+echo toda hora que for usar o read para escrever um prompt. Basta fazer
+"read -p prompt variavel"
+   Veja esta seção de exemplos:
+
+/* ----------------- */
+<++> BashScript/read1.sh
+#!/bin/bash
+read -p "Entre com uma string: " string
+echo $string
+<-->
+/* ----------------- */
+
+/* -=-=-=-=-= exemplo =-=-=-=-=- */
+$ ./read1.sh
+Entre com uma string: klogd eh um tremendo cachacero!
+klogd eh um tremendo cachacero!
+/* -=-=-=-=-= exemplo =-=-=-=-=- */
+
+/* ----------------- */
+<++> BashScript/read2.sh
+#!/bin/bash
+read -p "Entre com 3 strings: " s1 s2 s3
+echo "s1 = $s1     s2 = $s2     s3 = $s3"
+<-->
+/* ----------------- */
+
+/* -=-=-=-=-= exemplo2 =-=-=-=-=- */
+$ ./read-2.sh
+Entre com 3 strings: j00nix eh cabecudo
+s1 = j00nix     s2 = eh     s3 = cabecudo
+
+               # o mesmo script com mais de 3 strings #
+
+$ ./read-2.sh
+Entre com 3 strings: eSc2 adora ficar de copy'n'paste no IRC.
+s1 = eSc2     s2 = adora     s3 = ficar de copy'n'paste no IRC.
+/* -=-=-=-=-= exemplo2 =-=-=-=-=- */
+
+   Quando o "read" vai ler apenas uma variável, toda a string vai ser
+atribuída a esta variável. Quando vai ler mais de uma variável ele atribui
+cada string a sua respectiva variável; e quando o número de strings excede
+o número de variáveis a última fica com o excedente.
+
+   O parâmetro "-s" serve para não ecoar o que for digitado. É útil para
+digitar uma senha por exemplo. Tente "read -s PASS" e veja.
+
+   Você também pode determinar o número de caracteres que serão lidos com
+o parâmetro "-n". Tente fazer "read -n 10 VAR". Mas cuidado: ao usar a
+opção -n você não poderá usar o backspace para fazer correções.
+
+   A opção "-r" serve para que a contra-barra (backslash) não aja como um
+caracter de escape. E isso me foi bastante útil para fazer o Mextract,
+como você verá adiante.
+
+   Mais sobre o read na manpage do bash.
+
+
+
+3.3. Redirecionamento
+     ================
+
+   Quem já sabe programar deve saber que existem três "file descriptors"
+abertos por padrão (pelo menos nos sistemas operacionais que conheço):
+stdin (standard input), stdout (standard output) e stderr (standard error).
+Para fins práticos, estes são considerados arquivos e você pode direcionar
+destes "arquivos" para outros e vice-versa.
+Veja como direcionar de:
+
++ arquivo para stdin
+     $ programa < arquivo
+
++ stdout para arquivo
+     $ programa > arquivo
+
++ stderr para arquivo
+     $ programa 2> arquivo
+ 
++ stdout para stderr
+     $ programa 1>&2
+
++ stderr para stdout
+     $ programa 2>&1
+
++ stdout e stderr para arquivo
+     $ programa &> arquivo
+
+   Se você usar por exemplo "find / -perm -2 > worldwritable.txt" e no
+diretório não tiver um arquivo chamado "worldwritable.txt" este será
+criado, a saída do comando será gravada nele e a saída de erro padrão
+será impressa na tela (ou écran, se preferirem :P ). Para não ver as
+mensagens de "Permission Denied" faça isso:
+
+     $ find / -perm -2 > worldwritable.txt 2> /dev/null
+
+    Ainda temos um probleminha: este comando irá mostrar também todos os
+links simbólicos e vários arquivos de dispositivo. Para eliminar os links
+simbólicos faça o seguinte:
+
+     $ find / -perm -2 ! -type l > worldwritable.txt 2> /dev/null
+
+   Você ainda pode eliminar da saída os arquivos com stick bit e os
+arquivos de dispositivo usando parênt... EI!! Isto aqui é sobre
+redirecionamento, e não sobre o find! Vá ler a man page do find! =P
+
+   Se o arquivo já existir seu conteúdo será sobregravado. Mas você pode
+apenas concatenar o conteúdo no final do arquivo usando ">>". Exemplo:
+
+     $ echo " F I M  D O  A R Q U I V O " >> worldwritable.txt
+
+   Faça os testes e tire suas conclusões! ;)
+
+   Veja este script a seguir a execute ele usando redirecionamento na linha
+de comando pra ver os resultados
+
+/* ----------------- */
+<++> BashScript/redirecionamento.sh
+#!/bin/bash
+echo "Isto vai para a saída padrão."
+echo "Isto vai para a saída de erro padrão." 1>&2
+echo "Isto vai criar um arquivo e colocar esta linha nele." > ARQUIVO
+echo "Esta linha vai para o final do arquivo." >> ARQUIVO
+<-->
+/* ----------------- */
+
+   Tem um outro tipo de redirecionamento que é bastante útil. É assim:
+
+    $ programa << delimitador
+
+   Isto quer dizer que o programa vai ler o arquivo stdin até encontrar o
+delimitador.
+   Isso é muito útil para usar programas externos através de shell
+scripts.
+Você pode, por exemplo, usar este tipo de redirecionamento para fazer um
+shell script escrever um outro arquivo usando o comando "cat". Vamos a um
+exemplo em que eu crio um código de programa escrito em C através do
+script (note que as variáveis do script SÃO interpretadas):
+
+/* ----------------- */
+<++> BashScript/catredir.sh
+#!/bin/bash
+
+NAME=`whoami`
+
+echo -e "\n\tCRIANDO O ARQUIVO arquivo.c\n"
+
+# O arquivo.c terminará quando encontrar a string _EOF_
+cat << _EOF_ > arquivo.c
+#include <stdio.h>
+
+int main (void) {
+        printf ("\n\tPrograma que não faz nada além disso.\n");
+        printf ("\tFeito por $NAME\n\n");
+        return 0;
+}
+_EOF_
+# O arquivo.c acabou na linha ACIMA do _EOF_
+# Observe no arquivo.c o $NAME será "traduzido" para o username adequado
+
+echo -e "\n\tCOMPILANDO O PROGRAMA\n"
+gcc arquivo.c -o arquivo
+
+echo -e "\n\tFEITO!\n"
+<-->
+/* ----------------- */
+
+
+
+3.3.1. Pipe
+       ====
+
+   Agora vejamos o pipe. Sua sintaxe é:
+
+     $ programa1 | programa2
+
+   O pipe é usado para você fazer da saída de um programa a entrada de
+outro (como usado no exemplo amarelinho.sh já mostrado anteriormente).
+   Apesar de simples o pipe é muito útil e poderoso. Veja este exemplo
+muito simples:
+
+/* -=-=-=-=-= exemplo =-=-=-=-=- */
+$ who
+meleu    tty1     Nov 20 01:40
+hack     tty2     Nov 20 01:45
+root     tty3     Nov 20 02:44
+$ who | cut -c-9
+meleu
+hack
+root
+/* -=-=-=-=-= exemplo =-=-=-=-=- */
+
+   Mais exemplos serão dados ao longo do texto.
+
+
+
+3.3.1.1. Comandos Úteis com o Pipe
+         =========================
+
+--> xargs
+
+   O xargs transforma stdin em argumentos da linha de comando. Vamos usar
+o exemplo anterior de novo:
+
+/* -=-=-=-=-= exemplo =-=-=-=-=- */
+$ who | cut -c-9	# lembrando: pipe transforma stdout em stdin
+meleu
+hack
+root
+$ # "echo" nao le arquivo, ele usa argumentos.
+$ # A linha abaixo nao tem utilidade.
+$ who | cut -c0-9 | echo
+
+$ # "xargs" transforma o conteudo de stdin em argumentos
+$ who | cut -c0-9 | xargs echo
+meleu hack root
+/* -=-=-=-=-= exemplo =-=-=-=-=- */
+
+   Como eu gosto do find não resisti e colocarei um comando interessante
+que usa pipe e xargs:
+
+$ find / -perm -2 ! -type l ! -type c | xargs ls -ld > wordwritable.txt
+
+   Se não entendeu algo do comando acima e quer entender, olhe as
+manpages.
+
+
+--> tee
+
+   Outro comando bom de se usar com pipe é o "tee". Ele faz com que a
+saída do programa vá para a saída padrão, normalmente a tela (écran) *E*
+para um arquivo ao mesmo tempo.
+   É como se você fizesse "programa > arquivo" só que o saída do programa
+também seria escrita na saída padrão. Experimente:
+
+$ ls -la |tee conteudo.txt
+
