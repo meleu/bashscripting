@@ -49,7 +49,7 @@ O ponto forte do livro é o Apêndice sobre
 o awk, assunto que, diga-se de passagem, é
 muito difícil de encontrar em português.
 
-- [awk (Verade Absoluta)](http://www.absoluta.org/unix/unix_awk.htm):
+- [awk (Verdade Absoluta)](http://www.absoluta.org/unix/unix_awk.htm):
 Uma rápida introdução ao awk em português.
 
 - [OverTheWire wargames](http://overthewire.org/wargames/):
