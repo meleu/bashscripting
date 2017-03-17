@@ -1,4 +1,4 @@
-# 1. Começando
+# Começando
 
 Como você já deve saber, um shell script é um arquivo em formato texto
 puro que contém comandos/instruções para serem executados em uma

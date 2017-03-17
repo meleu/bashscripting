@@ -1,4 +1,4 @@
-# 10. Referências
+# Referências
 
 
 - [Guia focalinux](http://www.focalinux.org): No endereço a seguir você encontrará ótimos guias
