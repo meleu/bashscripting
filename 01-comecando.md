@@ -9,7 +9,7 @@ o interpretador.
 
 Veja um exemplo de script:
 
-{{ ./src/primeiroexemplo.sh }}
+{% include "./src/primeiroexemplo.sh" %}
 
 Para que se possa executar um shell script é necessário permissão de
 execução (mais sobre permissões em http://meleu.github.io/txts/permissoes.txt).
@@ -29,7 +29,7 @@ Agora você pode executar o script da seguinte forma:
 Veja outro exemplo de apenas um comando (se não entender não tem problema,
 em breve tudo ficará mais claro):
 
-{{ ./src/procurasuida.sh }}
+{% include "./src/procurasuida.sh" %}
 
 Agora vamos a uma rápida explicação sobre o código...
 - Na primeira linha nós dizemos qual será o nosso intrepretador de
