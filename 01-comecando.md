@@ -29,12 +29,7 @@ Agora você pode executar o script da seguinte forma:
 Veja outro exemplo de apenas um comando (se não entender não tem problema,
 em breve tudo ficará mais claro):
 
-```bash
-#!/bin/bash
-# script para procurar arquivos suid
-# que pertençam a determinado usuário
-find / -user $1 -perm -4000 2> /dev/null
-```
+{{ ./src/procurasuida.sh }}
 
 Agora vamos a uma rápida explicação sobre o código...
 - Na primeira linha nós dizemos qual será o nosso intrepretador de
