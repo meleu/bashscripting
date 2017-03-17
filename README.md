@@ -43,8 +43,7 @@ escola/faculdade), recomendo fortemente que você conheça o projeto [Cygwin](ht
 Trata-se de uma forma de obter um ambiente bastante similar à uma distribuição
 Linux rodando direto do Windows. Sem necessidade de máquina virtual alguma.
 
-É de extrema importância que você vá praticando assim que aprender
-algo novo, isso ajuda a se familiarizar e memorizar as coisas.
+É de extrema importância que você vá praticando assim que aprender algo novo, isso ajuda a se familiarizar e memorizar as coisas.
 
 A maioria dos scripts chamam programas existentes no sistema, não
 ficarei explicando em detalhes o que faz cada comando. Se você quer
@@ -81,8 +80,7 @@ vários macetinhos mais modernos sobre bash scripting.
 **Agradecimentos do texto original:**
 
 A todos que fazem um esforcinho para publicar informações
-de qualidade em português.
-Especialmente para meus amiguinhos(as): lucipher, klogd, module, eSc2,
+de qualidade em português. Especialmente para meus amiguinhos(as): lucipher, klogd, module, eSc2,
 xf, Emmanuele, Mana_Laura, NashLeon, Hekodangews, Blind_Bard, clausen,
 Renato <www.linuxsecurity.com.br>, hts, EvilLord, aurélio (assim como eu
 também é um dinossauro-amante-do-modo-texto), às pessoas que levam a
