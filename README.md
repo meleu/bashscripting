@@ -52,7 +52,7 @@ faz, sua sintaxe e etc. procure na página man. Se você tiver alguma
 dúvida sobre o bash use: "help" ou "man bash". A manpage é bastante
 completa (e grande também)! Use-a como referência.
 
-Para sua comodidade eu coloquei os códigos desse texto disponíveis em https://github.com/meleu/bashscripting/src
+Para sua comodidade eu coloquei os códigos desse texto disponíveis em https://github.com/meleu/bashscripting/src. Os códigos que tem uma serventia além da pura didática, estão em https://github.com/meleu/bashscripting/src/bacanas.
 
 **Atenção nas versões em que eu fiz os meus testes**, pois em versões antigas
 algumas coisas podem não funcionar. 
