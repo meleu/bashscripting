@@ -14,6 +14,7 @@ bash as regras são parecidíssimas:
 - Não pode conter espaços em branco;
 
    E uma coisa que nós, falantes da língua portuguesa temos que saber é:
+   
 - Os identificadores **NÃO** podem conter acentos!
 
    Enfim... todas aquelas regrinhas para identificadores de linguagens de

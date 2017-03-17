@@ -1,19 +1,19 @@
 ##  Variáveis do Usuário
 
-   As variáveis do usuário são as variáveis que você pode declarar, ler,
+As variáveis do usuário são as variáveis que você pode declarar, ler,
 inicializar e modificar. No exemplo abaixo nós criamos uma variável
 chamada "nome" e atribuímos a ela o valor "Meleu". Veja:
 
     [prompt]$ nome=Meleu
 
-   Não pode haver espaços nem antes nem depois do sinal de '='! Se você
+Não pode haver espaços nem antes nem depois do sinal de '='! Se você
 quiser atribuir um valor que contenha espaços é necessário usar as
 'aspas simples'.
 Veja:
 
      [prompt]$ nome='Meleu nao eh meleca!'
 
-   Agora para usar a variável é só você colocar um cifrão '$' antes do
+Agora para usar a variável é só você colocar um cifrão '$' antes do
 nome dela. Olhe um exemplo com e sem o '$':
 
 ```
@@ -23,7 +23,7 @@ nome
 Meleu não eh meleca!
 ```
 
-   Existe diferença entre usar `'aspas simples'`, `"aspas duplas"`, <code>&grave;crases&grave;</code> e
+Existe diferença entre usar `'aspas simples'`, `"aspas duplas"`, <code>&grave;crases&grave;</code> e
 não usar nada.  Veja isto:
 
 ```
