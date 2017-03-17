@@ -29,7 +29,7 @@ Agora você pode executar o script da seguinte forma:
 Veja outro exemplo de apenas um comando (se não entender não tem problema,
 em breve tudo ficará mais claro):
 
-{% include "./src/procurasuida.sh" %}
+{% include "./src/procurasuid.sh" %}
 
 Agora vamos a uma rápida explicação sobre o código...
 - Na primeira linha nós dizemos qual será o nosso intrepretador de
@@ -81,4 +81,4 @@ Outra coisa que devemos saber é que **quando um shell script é executado
 ele usa outra instância do shell**, e não a instância atual. É importante termos
 isso em mente quando formos usar variáveis.
 
-Falando em variáveis...
+Por falar em variáveis, o próximo capítulo trata exatamente disso...
