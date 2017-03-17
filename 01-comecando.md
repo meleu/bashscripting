@@ -9,7 +9,7 @@ o interpretador.
 
 Veja um exemplo de script:
 
-{% codesnippet "./src/primeiroexemplo.sh", language="bash" %}{% endcodesnippet %}
+{% codesnippet "./src/primeiroexemplo.sh" %}{% endcodesnippet %}
 
 Para que se possa executar um shell script é necessário permissão de
 execução (mais sobre permissões em http://meleu.github.io/txts/permissoes.txt).
@@ -69,7 +69,7 @@ drwxr-xr-x 2 meleu users 4096 Aug 19 23:11 progs
 drwxr-xr-x 2 meleu users 4096 Aug 19 22:57 txts
 ```
 
-O parâmetro "-x" faz com que seja exibido o comando e depois a saída do
+O parâmetro `-x` faz com que seja exibido o comando e depois a saída do
 comando.
 
 Outros parâmetros interessantes para "debugar" o script são:
