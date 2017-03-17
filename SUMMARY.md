@@ -16,7 +16,7 @@
 * [Tomadas de Decisão](chapter-04/README.md)
     * [if-then-else](chapter-04/if-then-else.md)
     * [case](chapter-04/case.md)
-    * [Tomadas de Decisão com && e ||](chapter-04/outras-tomadas-de-decisao.md)
+    * [Decisões Usando && e ||](chapter-04/outras-tomadas-de-decisao.md)
 * [Estruturas de Repetição](chapter-05/README.md)
     * [for](chapter-05/for.md)
     * [while](chapter-05/while.md)
