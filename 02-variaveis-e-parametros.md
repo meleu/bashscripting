@@ -1,4 +1,4 @@
-# Variáveis e Parâmetros
+# 2. Variáveis e Parâmetros
 
    Ao contrário das outras linguagens, o bash não possui "tipos de dados",
 todas as variáveis são strings. O bash usa strings para representar todos
