@@ -1,0 +1,35 @@
+#######################
+# Agenda de telefones #
+#######################
+#
+# OBS. I: ISSO NÃO É UM SCRIPT!
+# OBS. II: os números dos telefones deste
+#          arquivo são fictícios, não adianta
+#          que não vai dar pra sair passando
+#          trote... :-)
+#
+# Linhas que COMEÇAM com '#' serão consideradas
+# comentários pelo script "listartel.sh".
+#
+# Use da seguinte forma:
+# NOME	PREFIXO	TELEFONE
+# Com os campos separados por UM ÚNICO <TAB>.
+#
+# Exemplo:
+# lampiao	12	12345678
+# mariabonita	87	87654321
+
+# telefone "dus manu"
+xf	45	12431412
+slater	98	65451654
+minduin	45	54871800
+nash	23	65576784
+evil	23	54654654
+heko	43	56465465
+esc2	24	46456456
+
+# telefone "das mina"
+emmanuele	87	45646545
+maylline	29	65654655
+manalaura	82	65416578
+erika	65	34245522

@@ -1,0 +1,17 @@
+#############################
+# lista de amigos e estados #
+#############################
+#
+# OBS.: ISSO NÃO É UM SCRIPT!
+#
+# Linhas que COMEÇAM com '#' serão consideradas
+# comentários pelo script "listamigos.sh".
+#
+# Use da seguinte forma:
+# REGIAO        amigo1 amigo2 amigo3 amigoN ...
+#
+
+Nordeste        slater nashleon xf eSc2
+Sudeste         module hekodangews manalaura blindbard klogd
+Sul             evillord emmanuele
+
