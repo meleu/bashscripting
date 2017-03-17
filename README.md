@@ -53,18 +53,7 @@ faz, sua sintaxe e etc. procure na página man. Se você tiver alguma
 dúvida sobre o bash use: "help" ou "man bash". A manpage é bastante
 completa (e grande também)! Use-a como referência.
 
-[//]: # **TODO:** reescrever isso quando definir onde estarão os códigos.
-
-~~Para sua comodidade eu coloquei os códigos entre as tags do Phrack
-Extraction Utility. Você pode encontrá-lo na última edição da phrack em
-<http://www.phrack.org>. Eu fiz um script em bash para extração dos
-códigos baseado no Phrack Extraction Utility, chama-se Meleu Extraction
-Utility. Ele se encontra no tópico "9.5. Mextract.sh" e também em
-<http://meleu.da.ru/src/Mextract>.~~
-
-~~O esquema de organização é o seguinte: exemplos bestas ficam no
-diretório "BashScript/" os exemplos bacanas ficam no diretório
-"BashScript/bacanas/".~~
+Para sua comodidade eu coloquei os códigos desse texto disponíveis em https://github.com/meleu/bashscripting
 
 **Atenção nas versões em que eu fiz os meus testes**, pois em versões antigas
 algumas coisas podem não funcionar. 
