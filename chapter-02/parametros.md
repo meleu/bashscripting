@@ -1,5 +1,4 @@
-#
-# Parâmetros
+## Parâmetros
 
 Podemos passar parâmetros para o shell script assim como na maioria
 dos programas. Os parâmetros são variáveis, digamos, especiais. Para
@@ -10,32 +9,34 @@ que contar com a ajuda do shift e/ou do set (como veremos adiante).
 
 Veja esta relação:
 
-$0 é o nome do shell script (a.k.a. parâmetro zero);
+Veja esta relação:
 
-$1 a $9 $1 é o primeiro parâmetro, $9 o nono, e
-assim por diante;
+     $0                  é o nome do shell script (a.k.a. parâmetro zero);
 
-${10}, ${11}... quando o número do parâmetro possui mais de um
-dígito é necessário o uso das chaves;
+     $1 a $9             $1 é o primeiro parâmetro, $9 o nono, e
+                         assim por diante;
 
-$* todos os parâmetros em uma única string
-(exceto o $0);
+     ${10}, ${11}...     quando o número do parâmetro possui mais de um
+                         dígito é necessário o uso das chaves;
 
-$@ todos os parâmetros, cada um em strings
-separadas (exceto $0);
+     $*                  todos os parâmetros em uma única string
+                         (exceto o $0);
 
-$# número de parâmetros (sem contar com o $0).
+     $@                  todos os parâmetros, cada um em strings
+                         separadas (exceto $0);
 
-Outros:
+     $#                  número de parâmetros (sem contar com o $0).
 
-$? valor de retorno do último comando
-(explicado mais adiante);
+                  Outros:
 
-$$ PID do script.
+     $?                  valor de retorno do último comando
+                         (explicado mais adiante);
+
+     $$                  PID do script.
 
 Pra ficar mais claro, nada melhor do que um exemplo:
 
-bla{% codesnippet "./src/parametros.sh" %}{ % endcodesnippet %}
+bla{ % codesnippet "./src/parametros.sh" %}{ % endcodesnippet %}
 
 ```
 $ ./parametros.sh a b c d e f g h i j l m n o p q r s t u v x z
