@@ -84,28 +84,28 @@ marrom ficar em negrito. veja OBSERVAÇÕES mais adiante).
    Veja uma tabela com os códigos de movimentação de cursor que eu conheço
 (os caracteres '<' e '>' devem ser ignorados):
 
-|   Código    |         O que faz                              |
-|-------------|------------------------------------------------|
-| `\e[<N>A`     | Move o cursor N linhas acima.                  |
-| `\e[<N>B`     | Move o cursor N linhas abaixo.                 |
-| `\e[<N>C`     | Move o cursor N colunas à direita.             |
-| `\e[<N>D`     | Move o cursor N colunas à esquerda.            |
-| `\e[<N>E`     | Move o cursor N linhas para baixo na coluna 1. |
-| `\e[<N>F`     | Move o cursor N linhas para cima na coluna 1.  |
-| `\e[<N>G`     | Coloca o cursor na linha N.                    |
-| `\e[<L>;<C>H` | Coloca o cursor na linha L e na coluna C.      |
-| `\e[<N>I`     | Move o cursor N tabulações à direita.          |
-| `\e[<N>J`     | N=0  Apaga do cursor até o fim da tela; <br/>N=1  Apaga do cursor até o início da tela; <br/>N=2  Apaga a tela toda.
-| `\e[<N>K`     | N=0  Apaga do cursor até fim da linha; <br/>N=1  Apaga do cursor até o início da linha; <br/>N=2  Apaga a linha toda.
-| `\e[<N>L`     | Adiciona N linhas em branco abaixo da atual.   |
-| `\e[<N>M`     | Apaga N linhas abaixo da atual.                |
-| `\e[<N>P`     | Apaga N caracteres a direita.                  |
-| `\e[<N>S`     | Move a tela N linhas para cima.                |
-| `\e[<N>T`     | Move a tela N linhas para baixo.               |
-| `\e[<N>X`     | Limpa N caracteres à direita (com espaços).    |
-| `\e[<N>@`     | Adiciona N espaços em branco.                  |
-| `\e[s`        | Salva a posição do cursor.                     |
-| `\e[u`        | Restaura a posição do cursor que foi salva.    |
+Código | O que faz
+--- | ---
+`\e[<N>A` | Move o cursor N linhas acima.
+`\e[<N>B` | Move o cursor N linhas abaixo.
+`\e[<N>C` | Move o cursor N colunas à direita.
+`\e[<N>D` | Move o cursor N colunas à esquerda.
+`\e[<N>E` | Move o cursor N linhas para baixo na coluna 1.
+`\e[<N>F` | Move o cursor N linhas para cima na coluna 1.
+`\e[<N>G` | Coloca o cursor na linha N.
+`\e[<L>;<C>H` | Coloca o cursor na linha L e na coluna C.
+`\e[<N>I` | Move o cursor N tabulações à direita.
+`\e[<N>J` | N=0  Apaga do cursor até o fim da tela; <br/>N=1  Apaga do cursor até o início da tela; <br/>N=2  Apaga a tela toda.
+`\e[<N>K` | N=0  Apaga do cursor até fim da linha; <br/>N=1  Apaga do cursor até o início da linha; <br/>N=2  Apaga a linha toda.
+`\e[<N>L` | Adiciona N linhas em branco abaixo da atual.
+`\e[<N>M` | Apaga N linhas abaixo da atual.
+`\e[<N>P` | Apaga N caracteres a direita.
+`\e[<N>S` | Move a tela N linhas para cima.
+`\e[<N>T` | Move a tela N linhas para baixo.
+`\e[<N>X` | Limpa N caracteres à direita (com espaços).
+`\e[<N>@` | Adiciona N espaços em branco.
+`\e[s` | Salva a posição do cursor.
+`\e[u` | Restaura a posição do cursor que foi salva.
 
 
    Sim, a lista é grande... Faça uns testes para praticar um pouquinho.
@@ -113,16 +113,16 @@ marrom ficar em negrito. veja OBSERVAÇÕES mais adiante).
    Agora uma tabelinha dos atributos e seus números (N deve estar no
 formato "\e[<N>m"):
 
-| Atributo                    | N  | Cor         | X |
-|-----------------------------|----|-------------|---|
-| Desligar todos atributos    | 0  | Preto       | 0 |
-| Negrito                     | 1  | Vermelho    | 1 |
-| Cor X para o primeiro plano | 3X | Verde       | 2 |
-| Cor X para o segundo plano  | 4X | Marrom      | 3 |
-| Sublinhado                  | 4  | Azul        | 4 |
-| Piscando (blink)            | 5  | Roxo        | 5 |
-| Vídeo reverso               | 7  | Ciano       | 6 |
-|                             |    | Branco      | 7 |
+Atributo | N | Cor | X
+-------- | - | --- | --
+Desligar todos atributos | 0 | Preto | 0
+Negrito | 1 | Vermelho | 1
+Cor X para o primeiro plano | 3X | Verde | 2
+Cor X para o segundo plano | 4X | Marrom | 3
+Sublinhado | 4 | Azul | 4
+Piscando (blink) | 5 | Roxo | 5
+Vídeo reverso | 7 | Ciano | 6
+|             |   | Branco | 7
 
 **OBSERVAÇÕES:**
 - Negrito, Sublinhado e Piscando possuem comportamentos diferentes no
