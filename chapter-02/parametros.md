@@ -9,8 +9,6 @@ que contar com a ajuda do shift e/ou do set (como veremos adiante).
 
 Veja esta relação:
 
-Veja esta relação:
-
      $0                  é o nome do shell script (a.k.a. parâmetro zero);
 
      $1 a $9             $1 é o primeiro parâmetro, $9 o nono, e
