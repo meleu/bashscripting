@@ -9,6 +9,7 @@ echo toda hora que for usar o read para escrever um prompt. Basta fazer
 
 {% codesnippet "./src/read1.sh" %}{% endcodesnippet %}
 
+Executando o script:
 ```
 $ ./read1.sh
 Entre com uma string: klogd eh um tremendo cachacero!
@@ -17,13 +18,17 @@ klogd eh um tremendo cachacero!
 
 {% codesnippet "./src/read2.sh" %}{% endcodesnippet %}
 
+Executando o script:
+
 ```
 $ ./read-2.sh
 Entre com 3 strings: j00nix eh cabecudo
 s1 = j00nix     s2 = eh     s3 = cabecudo
+```
 
-               # o mesmo script com mais de 3 strings #
+Agora executando o mesmo script e entrando com mais de 3 strings:
 
+```
 $ ./read-2.sh
 Entre com 3 strings: eSc2 adora ficar de copy'n'paste no IRC.
 s1 = eSc2     s2 = adora     s3 = ficar de copy'n'paste no IRC.
