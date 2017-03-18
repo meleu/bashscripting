@@ -168,12 +168,14 @@ podemos utilizar os operadores que estamos acostumados, como '=' para
 igual, '<' para menor e assim por diante... Temos que utilizar outros
 operadores (que não são tão difíceis de decorar). São eles:
 
-     -eq      igual (EQual);
-     -ne      diferente (Not-Equal);
-     -lt      menor que, "<" (Less Than);
-     -le      menor ou igual, "<=" (Less than or Equal);
-     -gt      maior que, ">" (Greater Than);
-     -ge      maior ou igual, ">=" (Greater than or Equal).
+operador | significado
+--- | ---
+`-eq` | igual (EQual);
+`-ne` | diferente (Not-Equal);
+`-lt` | menor que, "<" (Less Than);
+`-le` | menor ou igual, "<=" (Less than or Equal);
+`-gt` | maior que, ">" (Greater Than);
+`-ge` | maior ou igual, ">=" (Greater than or Equal).
 
 ```
 $ [ 2 -eq 2 ]; echo $?
