@@ -36,7 +36,7 @@ Veja esta relação:
 
 Pra ficar mais claro, nada melhor do que um exemplo:
 
-bla{ % codesnippet "./src/parametros.sh" %}{ % endcodesnippet %}
+{% codesnippet "./src/parametros.sh" %}{% endcodesnippet %}
 
 ```
 $ ./parametros.sh a b c d e f g h i j l m n o p q r s t u v x z
@@ -53,7 +53,7 @@ Se você não entendeu direito a diferença entre o $* e o $@, então dê
 uma olhada no seguinte script (se não entendê-lo tudo bem, siga em frente
 e quando aprender sobre o "if" e o "for" leia-o novamente):
 
-bla{ % codesnippet "./src/testargs.sh" %}{ % endcodesnippet %}
+{% codesnippet "./src/testargs.sh" %}{% endcodesnippet %}
 
 
 
@@ -69,7 +69,7 @@ o shift não é executado.
 
 Veja este exemplo:
 
-bla{ % codesnippet "./src/shift-exemplo.sh %}{ % endcodesnippet %}
+{% codesnippet "./src/shift-exemplo.sh" %}{% endcodesnippet %}
 
 ```
 $ ./shift-exemplo.sh 1 2 3 4 5 6 7 8 9 0
@@ -85,7 +85,6 @@ executando "shift 7"
 Os valores que saem são perdidos. Use com atenção!
 
 
-
 ### set (para editar parâmetros)
 
 O que vou passar neste tópico não é sobre como usar "todo o poder do
@@ -98,7 +97,7 @@ Isso fará com que $1 seja 'um', $2 seja 'dois', $3 seja 'tres' e só!
 Não existirá $4, $5, etc. mesmo que eles tenham sido usados. Veja um
 exemplo de script:
 
-{ % codesnippet "./src/setparam.sh %}{% endcodesnippet %}
+{% codesnippet "./src/setparam.sh" %}{% endcodesnippet %}
 
 Não interessa quantos parâmetros você passar para este script, no
 final você só terá $1, $2 e $3 valendo 'um', 'dois' e 'tres',
