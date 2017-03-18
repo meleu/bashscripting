@@ -15,6 +15,8 @@
   * [Pipe](chapter-03/pipe.md)
 * [Tomadas de Decisão](chapter-04/README.md)
   * [if-then-else e afins](chapter-04/if-then-else.md)
+    * [test](chapter-04/test.md)
+    * [let](chapter-04/let.md)
   * [case](chapter-04/case.md)
   * [Decisões Usando `&&` e `||`](chapter-04/outras-tomadas-de-decisao.md)
 * [Estruturas de Repetição](chapter-05/README.md)
