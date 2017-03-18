@@ -250,24 +250,19 @@ se o IFS for nulo, toda essa linha será considerada uma única palavra
 aleatório entre 0 e 32767.
 
 Pra que serve isso? Várias coisas. Quem é criativo sempre precisa de um número
-aleatório... Imagine que você queira um número de telefone celular
-qualquer (sei lá pra quê!), você pode fazer um script que gera um número
-desse pra você. Aqui na minha região estes números começam com 99 ou 98,
-e têm um total de 8 dígitos. O script a seguir gera números que comecem
-com 98 somente:
+aleatório... No exemplo a seguir temos um simulador de cara ou coroa para ilustrar
+a utilidade do `RANDOM`:
 
-{% codesnippet "./src/cellnumbergen.sh" %}{% endcodesnippet %}
+{% codesnippet "./src/cara-ou-coroa.sh" %}{% endcodesnippet %}
 
 
 ### Outras
 
-   Outras variáveis que são muito usadas:
-   MAILCHECK ; HISTFILE ; HOSTNAME ; LS_OPTIONS ; LS_COLOR ; MANPATH ;
-   SHELL ; TERM ; USER ; PS3 .
+Outras variáveis que são muito usadas: `MAILCHECK`; `HISTFILE`; `HOSTNAME`;
+`LS_OPTIONS`; `LS_COLOR`; `MANPATH`; `SHELL`; `TERM`; `USER`; `PS3`.
 
-   Estas são as mais utilizadas, porém existem muitas outras. Para ver
+Estas são as mais utilizadas, porém existem muitas outras. Para ver
 quais são as variáveis definidas no momento basta entrar com o comando
 "set". E para ver apenas as variáveis de ambiente use "env".
 
-   Olhe a man page do bash na seção "Shell Variables" para mais detalhes.
-
+Olhe a man page do bash na seção "Shell Variables" para mais detalhes.
