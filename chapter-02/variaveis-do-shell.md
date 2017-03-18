@@ -222,16 +222,16 @@ aprender mais sobre isso leia o Bash-Prompt-HOWTO (v. 10. Referências).
 separadas. Normalmente o IFS é um espaço, uma tabulação (Tab) e um
 caractere nova linha (\n). Desta maneira:
 
-isto eh uma string
+    isto eh uma string
 
 são quatro palavras, pois IFS é um espaço e as palavras estão separadas
 por espaço. Agora se eu mudar IFS para um ':' desta maneira:
 
-IFS=':'
+    IFS=':'
 
 então a string:
 
-isto:eh:uma:string
+    isto:eh:uma:string
 
 conterá quatro palavras. Isto é útil para casos como neste exemplo:
 
