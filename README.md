@@ -54,7 +54,7 @@ faz, sua sintaxe e etc. procure na página man. Se você tiver alguma
 dúvida sobre o bash use: "help" ou "man bash". A manpage é bastante
 completa (e grande também)! Use-a como referência.
 
-Para sua comodidade eu coloquei os códigos desse texto disponíveis em https://github.com/meleu/bashscripting/tree/master/src. Os códigos que tem uma serventia além da pura didática, estão em https://github.com/meleu/bashscripting/tree/master/src/bacanas.
+Todos os códigos presentes nesse texto podem ser encontrados em https://github.com/meleu/bashscripting/tree/master/src.
 
 **Atenção nas versões do bash em que eu fiz os meus testes**, pois em versões antigas
 algumas coisas podem não funcionar. 
@@ -114,4 +114,4 @@ licenciante a apoiar você ou o seu uso.
 do material, tem de distribuir as suas contribuições sob a mesma
 licença que o original. 
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está licenciado com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licença Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Este obra está licenciada com uma Licença <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Atribuição-NãoComercial-CompartilhaIgual 4.0 Internacional</a>.
