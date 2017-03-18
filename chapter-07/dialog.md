@@ -11,7 +11,7 @@ o dialog em português que nem vale a pena eu ter o retrabalho de
 também escrever sobre isso.
 
 Para saber mais sobre o dialog e como utilizá-lo, consulte http://aurelio.net/shell/dialog/
-(sim! É um guia escrito pelo mestre Aurélio @aureliojargas).
+(sim! É um guia escrito pelo mestre Aurélio @aureliojargas ).
 
 **Observação**: a licença do guia do dialog do aurélio diz o seguinte
 "*Este documento pode ser copiado, distribuído e divulgado livremente,
