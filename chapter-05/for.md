@@ -46,9 +46,11 @@ $ seq 1 10
 8
 9
 10
+```
 
-	# pode ser em ordem decrescente também:
+Pode ser em ordem decrescente também:
 
+```
 $ seq 10 1
 10
 9
@@ -62,16 +64,16 @@ $ seq 10 1
 1
 ```
 
-   Fácil não? Agora vejamos um exemplo:
+Fácil não? Agora vejamos um exemplo:
 
 {% codesnippet "./src/tabuada.sh" %}{% endcodesnippet %}
 
-   Moleza! ;)
+Moleza! ;)
 
 
 ### "for" como na linguagem C
 
-   Se você já é programador C, pode tirar proveito da sintaxe do let (já
+Se você já é programador C, pode tirar proveito da sintaxe do let (já
 explicado no ponto 4.1.2.). Para conferir isto basta pegar o script acima
 (tabuada.sh) e trocar as linhas onde tem
 
