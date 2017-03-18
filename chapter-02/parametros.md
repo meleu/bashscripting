@@ -18,13 +18,6 @@ parametro | significado
 `$@`              | todos os parâmetros, cada um em strings separadas (exceto $0);
 `$#`              | número de parâmetros (sem contar com o $0).
 
-                  Outros:
-
-     `$?`                  valor de retorno do último comando
-                         (explicado mais adiante);
-
-     `$$`                  PID do script.
-
 Pra ficar mais claro, nada melhor do que um exemplo:
 
 {% codesnippet "./src/parametros.sh" %}{% endcodesnippet %}
