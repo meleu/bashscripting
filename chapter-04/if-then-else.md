@@ -133,7 +133,7 @@ else pra ser executado caso a expressao do if retorne falso (ou
 não-zero). Uma solução pra que não dê este erro no test é usar aspas
 duplas. Veja só:
 
-{% codesnippet "./scr/strcmp.sh" %}{% endcodesnippet %}
+{% codesnippet "./src/strcmp.sh" %}{% endcodesnippet %}
 
    Com este acontece tudo certo. ;)
 
