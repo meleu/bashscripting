@@ -11,16 +11,12 @@ Veja esta relação:
 
 parametro | significado
 --- | ---
-`$0`                 | é o nome do shell script (a.k.a. parâmetro zero);
-`$1 a $9`            | $1 é o primeiro parâmetro, $9 o nono, e
-                     | assim por diante;
-`${10}, ${11}...`    | quando o número do parâmetro possui mais de um
-                     | dígito é necessário o uso das chaves;
-`$*`                 | todos os parâmetros em uma única string
-                     | (exceto o $0);
-`$@`                 | todos os parâmetros, cada um em strings
-                     | separadas (exceto $0);
-`$#`                 | número de parâmetros (sem contar com o $0).
+`$0`              | é o nome do shell script (a.k.a. parâmetro zero);
+`$1 a $9`         | $1 é o primeiro parâmetro, $9 o nono, e assim por diante;
+`${10}, ${11}...` | quando o número do parâmetro possui mais de um dígito é necessário o uso das chaves;
+`$*`              | todos os parâmetros em uma única string (exceto o $0);
+`$@`              | todos os parâmetros, cada um em strings separadas (exceto $0);
+`$#`              | número de parâmetros (sem contar com o $0).
 
                   Outros:
 
