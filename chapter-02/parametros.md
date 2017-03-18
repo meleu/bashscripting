@@ -51,7 +51,7 @@ Todos os parâmetros: a b c d e f g h i j l m n o p q r s t u v x z
 uma olhada no seguinte script (se não entendê-lo tudo bem, siga em frente
 e quando aprender sobre o "if" e o "for" leia-o novamente):
 
-{% codesnippet "./src/testargs.sh" %}{% endcodesnippet %}
+{ % codesnippet "./src/testargs.sh" %}{% endcodesnippet %}
 
 
 
@@ -67,7 +67,7 @@ o shift não é executado.
 
 Veja este exemplo:
 
-{% codesnippet "./src/shift-exemplo.sh %}{% endcodesnippet %}
+{ % codesnippet "./src/shift-exemplo.sh %}{% endcodesnippet %}
 
 ```
 $ ./shift-exemplo.sh 1 2 3 4 5 6 7 8 9 0
@@ -96,7 +96,7 @@ Não tem nenhum segredo! Veja este exemplo:
 Não existirá $4, $5, etc. mesmo que eles tenham sido usados. Veja um
 exemplo de script:
 
-{% codesnippet "./src/setparam.sh %}{% endcodesnippet %}
+{ % codesnippet "./src/setparam.sh %}{% endcodesnippet %}
 
    Não interessa quantos parâmetros você passar para este script, no
 final você só terá $1, $2 e $3 valendo 'um', 'dois' e 'tres',
