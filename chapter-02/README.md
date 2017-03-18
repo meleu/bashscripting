@@ -17,7 +17,7 @@ bash as regras são parecidíssimas:
    
 - Os identificadores **NÃO** podem conter acentos!
 
-   Enfim... todas aquelas regrinhas para identificadores de linguagens de
+Enfim... todas aquelas regrinhas para identificadores de linguagens de
 programação também se aplica aqui, exceto aquela famosa sobre palavras
 reservadas. Você pode por exemplo fazer "if=lalala" que funcionará
 perfeitamente. A única coisa que não pode é usar um nome que já tenha sido
