@@ -11,19 +11,19 @@ Veja como direcionar de:
 + arquivo para stdin:
 `programa < arquivo`
 
-+ stdout para arquivo
++ stdout para arquivo:
 `programa > arquivo`
 
-+ stderr para arquivo
++ stderr para arquivo:
 `programa 2> arquivo`
  
-+ stdout para stderr
++ stdout para stderr:
 `programa 1>&2`
 
-+ stderr para stdout
++ stderr para stdout:
 `programa 2>&1`
 
-+ stdout e stderr para arquivo
++ stdout e stderr para arquivo:
 `programa &> arquivo`
 
 Se você usar por exemplo "find / -perm -2 > worldwritable.txt" e no

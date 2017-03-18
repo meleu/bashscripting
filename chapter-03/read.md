@@ -5,7 +5,7 @@ O read tem alguns "macetinhos". Pra começar: você não precisa colocar um
 echo toda hora que for usar o read para escrever um prompt. Basta fazer
 "read -p prompt variavel"
 
-   Veja esta seção de exemplos:
+   Veja esta sequencia de exemplos:
 
 {% codesnippet "./src/read1.sh" %}{% endcodesnippet %}
 
@@ -15,6 +15,8 @@ $ ./read1.sh
 Entre com uma string: klogd eh um tremendo cachacero!
 klogd eh um tremendo cachacero!
 ```
+
+Agora um outro script:
 
 {% codesnippet "./src/read2.sh" %}{% endcodesnippet %}
 
