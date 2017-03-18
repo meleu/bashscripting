@@ -236,8 +236,7 @@ especificamente no tópico ARITHMETIC EVALUATION). Ele é bastante útil para
 quem está acostumado com programação C, pois sua sintaxe é parecidíssima,
 mas só é usado para expressões aritméticas.
 
-   Com este comando você pode comparar valores numéricos com os sinais <,
->, <=, >=, ==, e !=. E mais bastante coisa comum em linguagem C (como por
+   Com este comando você pode comparar valores numéricos com os sinais <, >, <=, >=, ==, e !=. E mais bastante coisa comum em linguagem C (como por
 exemplo o ++ e o --). Alguns exemplos do que você pode fazer:
 
 ```
