@@ -169,9 +169,17 @@ $ echo $SHLVL
 Quando você inicializa scripts a partir do comando `source` o script é
 executado no shell pai, portanto se tiver um `exit` no script você vai
 executar um logoff. É aí que está a utilidade da variável `SHLVL`. Quando
-você está no shell primário o valor de `SHLVL` é 1. Então você pode, através
-de um `if` por exemplo, executar o `exit` só se `SHLVL` for diferente de 1
-(mais informações sobre o `source` em {{ book.funcoes_como_comandos }}).
+você está no shell primário o valor de `SHLVL` é 1. Então para evitar um logoff inadvertido, você pode fazer isso:
+
+```bash
+    if [ "$SHLVL" -ne 1 ]; then
+        exit
+    else
+        return
+    fi
+```
+
+Mais informações sobre o `source` em {{ book.funcoes_como_comandos }}.
 
 
 
