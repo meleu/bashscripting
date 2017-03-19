@@ -74,20 +74,20 @@ O que vou passar neste tópico não é sobre como usar "todo o poder do
 comando set", e sim como usar set especificamente para editar parâmetros.
 Não tem nenhum segredo! Veja este exemplo:
 
-set um dois tres
+    set um dois tres
 
-Isso fará com que $1 seja 'um', $2 seja 'dois', $3 seja 'tres' e só!
-Não existirá $4, $5, etc. mesmo que eles tenham sido usados. Veja um
+Isso fará com que `$1` seja `um`, `$2` seja `dois`, `$3` seja `tres` e só!
+Não existirá `$4`, `$5`, etc. mesmo que eles tenham sido usados. Veja um
 exemplo de script:
 
 {% codesnippet "./src/setparam.sh" %}{% endcodesnippet %}
 
 Não interessa quantos parâmetros você passar para este script, no
-final você só terá $1, $2 e $3 valendo 'um', 'dois' e 'tres',
+final você só terá `$1`, `$2` e `$3` valendo `um`, `dois` e `tres`,
 respectivamente.
 
-No meu Mextract.sh (tópico 9.5.) esta característica do set é muito
-bem aproveitada! ;-)
+No meu Mextract.sh (ver {{ mextractsh }}) esta característica do `set` é muito
+bem aproveitada!
 
 
 
