@@ -33,7 +33,7 @@ Todos os parâmetros: a b c d e f g h i j l m n o p q r s t u v x z
 ```
 
 
-Se você não entendeu direito a diferença entre o $* e o $@, então dê
+Se você não entendeu direito a diferença entre o `$*` e o `$@`, então dê
 uma olhada no seguinte script (se não entendê-lo tudo bem, siga em frente
 e quando aprender sobre o `if` e o `for` leia-o novamente):
 
