@@ -14,7 +14,7 @@ $ echo $NOME
 Meleu Zord
 ```
 
-é equivlente à
+é equivalente à
 
 ```
 $ declare -r NOME="Meleu Zord"
