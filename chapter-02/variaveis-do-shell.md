@@ -172,11 +172,11 @@ executar um logoff. É aí que está a utilidade da variável `SHLVL`. Quando
 você está no shell primário o valor de `SHLVL` é 1. Então para evitar um logoff inadvertido, você pode fazer isso:
 
 ```bash
-    if [ "$SHLVL" -ne 1 ]; then
-        exit
-    else
-        return
-    fi
+if [ "$SHLVL" -ne 1 ]; then
+    exit
+else
+    return
+fi
 ```
 
 Mais informações sobre o `source` em {{ book.funcoes_como_comandos }}.
