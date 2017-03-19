@@ -86,7 +86,7 @@ Não interessa quantos parâmetros você passar para este script, no
 final você só terá `$1`, `$2` e `$3` valendo `um`, `dois` e `tres`,
 respectivamente.
 
-No Mextract.sh (capítulo {{ mextractsh }}) esta característica do `set` é muito
+No Mextract.sh (capítulo {{ book.mextractsh }}) esta característica do `set` é muito
 bem aproveitada!
 
 
