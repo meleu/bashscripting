@@ -1,6 +1,6 @@
 # Introdução
 
-A versão de leitura amigável deste texto está disponível aqui: https://meleu.gitbooks.io/bashscripting/content/
+A versão web de leitura amigável deste texto está disponível aqui: https://meleu.gitbooks.io/bashscripting/content/
 
 ---
 
