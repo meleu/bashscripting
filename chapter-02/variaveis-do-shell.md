@@ -205,7 +205,7 @@ $
 ```
 
    Esta variável é útil quando queremos brincar com o prompt, para
-aprender mais sobre isso leia o Bash-Prompt-HOWTO (v. {{ book.referencias }}).
+aprender mais sobre isso leia o Bash-Prompt-HOWTO (ver {{ book.referencias }}).
 
 
 ### `IFS`
@@ -250,7 +250,7 @@ a utilidade do `RANDOM`:
 
 ### Outras
 
-Outras variáveis que são muito usadas: `MAILCHECK`; `HISTFILE`; `HOSTNAME`;
+Outras variáveis que são muito usadas: `HISTFILE`; `HOSTNAME`;
 `LS_OPTIONS`; `LS_COLOR`; `MANPATH`; `SHELL`; `TERM`; `USER`; `PS3`.
 
 Estas são as mais utilizadas, porém existem muitas outras. Para ver
