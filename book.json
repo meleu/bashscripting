@@ -1,9 +1,7 @@
 {
-    variables: {
-        referencias: "[Referências](./chapter-10/README.md)"
+    "variables": {
+        "referencias": "[Referências](./chapter-10/README.md)"
     }
-}
-{
     "title": "Programação em Bourne-Again Shell",
     "author": "meleu",
     "language": "pt",
