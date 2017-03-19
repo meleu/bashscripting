@@ -1,6 +1,6 @@
 {
     "variables": {
-	    "comocontribuir": "[Como Contribuir](/CONTRIBUTING.md)",
+	    "como_contribuir": "[Como Contribuir](/CONTRIBUTING.md)",
 	    "variaveis_e_parametros": "[Variáveis e Parâmetros](/chapter-02/README.md)",
 	    "variaveis_do_usuario": "[Variáveis do Usuário](/chapter-02/variaveis-do-usuario.md)",
 	    "variaveis_do_shell": "[Variáveis do Shell](/chapter-02/variaveis-do-shell.md)",
