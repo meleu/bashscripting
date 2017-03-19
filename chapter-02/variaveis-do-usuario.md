@@ -2,19 +2,18 @@
 
 As variáveis do usuário são as variáveis que você pode declarar, ler,
 inicializar e modificar. No exemplo abaixo nós criamos uma variável
-chamada "nome" e atribuímos a ela o valor "Meleu". Veja:
+chamada `nome` e atribuímos a ela o valor `Meleu`. Veja:
 
     [prompt]$ nome=Meleu
 
-Não pode haver espaços nem antes nem depois do sinal de '='! Se você
+Não pode haver espaços nem antes nem depois do sinal de `=`. Se você
 quiser atribuir um valor que contenha espaços é necessário usar as
-'aspas simples'.
-Veja:
+`'aspas simples'`. Veja:
 
      [prompt]$ nome='Meleu nao eh meleca!'
 
-Agora para usar a variável é só você colocar um cifrão '$' antes do
-nome dela. Olhe um exemplo com e sem o '$':
+Agora para usar a variável é só você colocar um cifrão `$` antes do
+nome dela. Olhe um exemplo com e sem o `$`:
 
 ```
 [prompt]$ echo nome
@@ -64,7 +63,7 @@ segundo exemplo acima, onde usamos a variável `$PATH`).
 
 - nada: similar as aspas duplas, porém ignora espaços excedentes.
 
-- <code>&grave;crases&grave;</code>: atribuem a *saída do comando* que está entre elas,
+- <code>&grave;crases&grave;</code>: atribuem a **saída do comando** que está entre elas,
 tem a capacidade de ver o conteúdo de uma variável
 (no último exemplo acima, onde usamos <code>&grave;ls $HOME&grave;</code>);
 
@@ -95,13 +94,11 @@ coracaodeleao
 ```
 
 
-[//] # TODO: o parágrafo abaixo está impreciso e mal escrito! melhorar isso
-
 Como eu disse anteriormente, quando executamos um shell script ele usa
-outro shell, portanto toda variável que for criada/inicializada num shell
-script perderá seu valor no final da execução do mesmo. No entanto, você
-pode fazer um shell script usar variáveis de usuário exportando-a
-com o comando `export` (ver man page do bash). Um exemplo simples:
+outra instância do shell, portanto toda variável criada/inicializada antes
+de você invocar o script não estará acessível pelo script. No entanto
+você pode tornar sua variável acessível usando o comando `export`. Veja
+a sequência de comandos a seguir e você entenderá a utilidade do `export`:
 
 ```
 [prompt]$ cat teste.sh 
@@ -150,20 +147,19 @@ sabermos qual é a sua fruta favorita basta digitarmos:
 
     [prompt]$ echo ${FRUTA[0]}
 
-   Bacana não acham?
+Bacana não acham?
 
-   Agora vejamos uma coisa interessante. Se eu declarar uma frut... ops!
-digo, se eu declarar uma variável assim:
+Agora vejamos uma coisa interessante. Se eu declarar uma variável assim:
 
     [prompt]$ FRUTA=goiaba
 
-e depois quiser fazer um array com o nome FRUTA eu posso fazer assim:
+e depois quiser transformar esta variável num array com o nome FRUTA eu posso fazer assim:
 
     [prompt]$ FRUTA[1]=manga
 
-Desta maneira 'goiaba' passa a ser armazenada em FRUTA[0]   
+Desta maneira `goiaba` fica armazenada em `FRUTA[0]` e `manga`, em `FRUTA[1]`.   
 
-   Outra coisa interessante é que podemos declarar um array inteiro numa
+Outra coisa interessante é que podemos declarar um array inteiro numa
 única linha de comando. Para isto usamos a sintaxe:
 
     NomeDoArray=(valor1 valor2 ... valorn)
@@ -176,9 +172,10 @@ E para vermos toda a lista de uma vez só, podemos usar o seguinte comando:
 
     $ echo ${FRUTA[*]}
 
+ou então:
 
-   Existem várias outras especificações para arrays mas quero passar aqui
+    $ echo ${FRUTA[@]}
+
+Existem várias outras especificações para arrays mas quero passar aqui
 só o básico. E se você precisar usar arrays de maneira mais complexa que
 isso, procure a documentação oficial do bash.
-
-[//] # TODO: acho que tenho alguns exemplos interessantes em alguns RetroPie scriptmodules
