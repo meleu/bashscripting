@@ -7,3 +7,27 @@ Eu poderia ficar "enxendo lingüiça" metendo vários exemplos, mas o objetivo
 é apenas ilustrar que vários conceitos mostrados no livro podem ser utilizados
 em conjunto num mesmo script. Se você quer mais
 exemplos olhe as Referências.
+
+## backup.sh
+
+{% codesnippet "./src/backup.sh" %}{% endcodesnippet %}
+
+
+## howto.sh
+
+{% codesnippet "./src/howto.sh" %}{% endcodesnippet %}
+
+
+## todo.sh
+
+{% codesnippet "./src/todo.sh" %}{% endcodesnippet %}
+
+
+## inseretxt.sh
+
+{% codesnippet "./src/inseretxt.sh" %}{% endcodesnippet %}
+
+
+## Mextract.sh
+
+{% codesnippet "./src/Mextract.sh" %}{% endcodesnippet %}
