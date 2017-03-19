@@ -58,7 +58,7 @@ meleu@meleu:/tmp$ echo $PATH
 ```
 
 Portanto se eu digitar um `ls` o shell irá procurar por esse comando em
-`/usr/local/bin` depois em `/usr/bin` e daí em diante.
+`/usr/local/bin` depois em `/usr/bin` e vai seguindo a lista até encontrar o comando ou chegar ao final da lista. Se o comando não estiver em nenhum dos diretórios do `PATH`, obtemos a famos mensagem *command not found*.
 
 Esta variável algumas vezes pode ser usada no hacking! Imagine que
 um programador inexperiente tenha feito um programa suid que usa a função
@@ -83,8 +83,8 @@ você salvou o SEU date, e então executar o programa suid feito pelo
 incompetente programador. Faça uns testes aí que você vai me
 entender melhor.
 
-   Esta situação é bem difícil de se encontrar hoje em dia, resolvi
-colocar aqui por questões históricas. :P
+Esta situação é bem difícil de se encontrar hoje em dia, resolvi
+colocar aqui por questões históricas.
 
 
 ### `PS1`
