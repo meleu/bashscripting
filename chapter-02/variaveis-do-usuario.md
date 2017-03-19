@@ -166,15 +166,15 @@ Outra coisa interessante é que podemos declarar um array inteiro numa
 
 Desta maneira o EvilLord economizaria teclado (?!) digitando isto:
 
-    $ FRUTA=(goiaba manga pera laranja)
+    [prompt]$ FRUTA=(goiaba manga pera laranja)
 
 E para vermos toda a lista de uma vez só, podemos usar o seguinte comando:
 
-    $ echo ${FRUTA[*]}
+    [prompt]$ echo ${FRUTA[*]}
 
 ou então:
 
-    $ echo ${FRUTA[@]}
+    [prompt]$ echo ${FRUTA[@]}
 
 Existem várias outras especificações para arrays mas quero passar aqui
 só o básico. E se você precisar usar arrays de maneira mais complexa que
