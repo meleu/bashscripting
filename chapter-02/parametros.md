@@ -43,13 +43,12 @@ e quando aprender sobre o `if` e o `for` leia-o novamente):
 
 ### shift
 
-O bash possui um comando embutido que lida com parâmetros, o shift.
-Quando você usa o shift sai o primeiro parâmetro da lista e o segundo vai
-para $1 o terceiro vai para $2, e assim por diante. Você pode ainda
+O bash possui um comando embutido que lida com parâmetros: o `shift`.
+Quando você usa o shift o primeiro parâmetro da lista some e o segundo vai
+para `$1` o terceiro vai para `$2`, e assim por diante. Você pode ainda
 especificar quantas "casas" você quer que os parâmetros "andem" à
-esquerda através de "shift n" onde 'n' é o número de casas, mas se o
-número de casas que ele deve andar for maior que o número de parâmetros
-o shift não é executado.
+esquerda através de `shift n` onde `n` é o número de casas. Mas atenção, se `n`
+for maior que o número de parâmetros o shift não é executado.
 
 Veja este exemplo:
 
