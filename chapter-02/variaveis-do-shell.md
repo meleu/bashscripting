@@ -146,24 +146,6 @@ u
 caracteres especiais que o `PS1` usa.
 
 
-### `MAIL`
-
-   Nada mais é do que o arquivo onde são guardados seus emails. Aqui na
-minha máquina eu uso o sendmail como servidor de email, portanto:
-
-```
-meleu@meleu:~$ echo $MAIL
-/var/spool/mail/meleu
-```
-
-porém se estivesse usando qmail seria:
-
-```
-meleu@meleu:~$ echo $MAIL
-/home/meleu/Mailbox
-```
-
-
 ### `SHLVL`
 
    Esta variável armazena quantos shells você executou a partir da
