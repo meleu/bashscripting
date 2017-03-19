@@ -4,18 +4,20 @@ A versão web de leitura amigável deste texto está disponível aqui: https://m
 
 ---
 
-Este texto foi originalmente escrito em 2002, época que eu tinha muito tempo
+Este texto foi originalmente escrito em 2002, época que eu tinha mais tempo
 livre. Esta versão aqui é uma tentativa de atualizar o texto, baseado em práticas
-mais modernas de programação shell, e também tentando me aproveitar
+mais modernas de programação shell, e também tentando aproveitar
 dos recursos colaborativos presentes no github.
 
-A versão original do texto pode ser encontrada: http://meleu.github.io/txts/bashscripting.txt.
+Por questões históricas a versão original deste texto ainda pode ser encontrada:
+http://meleu.github.io/txts/bashscripting.txt.
 
 ---
 
 
-Estou partindo do princípio de que ninguém aqui tem dúvidas quanto a
-utilidade de um shell script.
+Estou partindo do princípio de que se você está aqui lendo isso significa
+que não tem dúvidas quanto a utilidade de um shell script. Então podemos
+pular esta parte. :smile:
 
 Na época que eu escrevi este texto o material sobre bash em português era
 bem escasso. Agora o cenário já é outro, temos alguns bons livros sobre o
