@@ -216,7 +216,7 @@ caractere nova linha `\n`. Desta maneira:
 
     isto eh uma string
 
-são quatro palavras, pois `IFS` é um espaço e as palavras estão separadas
+são quatro palavras: `isto`, `eh`, `uma` e `string`. Pois `IFS` é um espaço e as palavras estão separadas
 por espaço. Agora se eu mudar `IFS` para um `:` desta maneira:
 
     IFS=':'
