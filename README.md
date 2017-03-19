@@ -9,6 +9,9 @@ livre. Esta versão aqui é uma tentativa de atualizar o texto, baseado em prát
 mais modernas de programação shell, e também tentando aproveitar
 dos recursos colaborativos presentes no github.
 
+Caso queira contribuir (correções no texto, melhoria nos códigos, etc.) o repositório
+deste livro no github fica em https://github.com/meleu/bashscripting
+
 Por questões históricas a versão original deste texto ainda pode ser encontrada:
 http://meleu.github.io/txts/bashscripting.txt.
 
@@ -17,7 +20,7 @@ http://meleu.github.io/txts/bashscripting.txt.
 
 Estou partindo do princípio de que se você está aqui lendo isso significa
 que não tem dúvidas quanto a utilidade de um shell script. Então podemos
-pular esta parte. :smile:
+pular esta parte.
 
 Na época que eu escrevi este texto o material sobre bash em português era
 bem escasso. Agora o cenário já é outro, temos alguns bons livros sobre o
