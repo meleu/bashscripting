@@ -81,15 +81,21 @@ Vou manter os agradecimentos do texto original, mas também gostaria de agradece
 ao pessoal do projeto [RetroPie](https://retropie.org.uk/), com quem eu aprendi
 vários macetinhos mais modernos sobre bash scripting.
 
+A medida que este texto for recebendo contribuições, esta seção de Agradecimentos
+irá aumentando. E já temos um contribuinte para iniciar esta lista:
+
+- [Matheus Alves](https://github.com/theuves)
+
+
 **Agradecimentos do texto original:**
 
 A todos que fazem um esforcinho para publicar informações
 de qualidade em português. Especialmente para meus amiguinhos(as): lucipher, klogd, module, eSc2,
 xf, Emmanuele, Mana_Laura, NashLeon, Hekodangews, Blind_Bard, clausen,
-Renato <www.linuxsecurity.com.br>, hts, EvilLord, aurélio (assim como eu
+Renato ~~<www.linuxsecurity.com.br>~~, hts, EvilLord, aurélio (assim como eu
 também é um dinossauro-amante-do-modo-texto), às pessoas que levam a
-Unsekurity Scene <http://unsekurity.virtualave.net> a sério, aos camaradas
-da EoH Team <http://eoh-team.tk>, e outros pessoas que eu posso não me
+Unsekurity Scene ~~<http://unsekurity.virtualave.net>~~ a sério, aos camaradas
+da EoH Team ~~<http://eoh-team.tk>~~, e outros pessoas que eu posso não me
 lembrar agora mas que também são meus camaradas. É lógico que também devo
 agradecimentos a toda a comunidade Open Source, sem a qual tudo isso aqui
 não existiria! Amo vocês! =D
