@@ -9,8 +9,7 @@ livre. Esta versão aqui é uma tentativa de atualizar o texto, baseado em prát
 mais modernas de programação shell, e também tentando aproveitar
 dos recursos colaborativos presentes no github.
 
-Caso queira contribuir para a melhoria deste livro, veja as instruções em
-[Como Contribuir](./CONTRIBUTING.md).
+Caso queira contribuir para a melhoria deste livro, veja as instruções em {{ book.como_contribuir }}.
 
 Por questões históricas a versão original deste texto ainda pode ser encontrada:
 http://meleu.github.io/txts/bashscripting.txt.
