@@ -3,7 +3,9 @@
 Como você já deve saber, um shell script é um arquivo em formato texto
 puro que contém comandos/instruções para serem executados em uma
 determinada shell. O que vou tentar passar neste texto é como fazer shell
-script para o Bourne-Again Shell, ou bash. Esta é uma linguagem
+script para o Bourne-Again Shell, ou bash. Grande parte do conteúdo desse texto
+pode ser usado em outros shells disponíveis no mundo UNIX/Linux, mas o foco
+do texto é o bash. Esta é uma linguagem
 interpretada (você não precisa compilar para ter o executável) e o bash é
 o interpretador.
 
@@ -37,10 +39,12 @@ comentário começa com uma cerquilha `#` e vai até o final da linha;
 parâmetro dado na linha de comando (será falado mais sobre isso daqui
 a pouco), por exemplo:
 
-    ./procurasuid.sh level5
+```
+./procurasuid.sh level5
+```
 
 irá procurar por todos os arquivos suid que pertençam ao usuário level5.
-Como você deve ter reparado, esse shell script é útil nos wargames (veja [Referências](../chapter-10/README.md)).
+Esse shell script é útil nos wargames (veja [Referências](../chapter-10/README.md)).
 
 De vez em quando é bom observar o que o script está fazendo. Para isso
 você pode usar alguns parâmetros junto com o shell para executar seu
