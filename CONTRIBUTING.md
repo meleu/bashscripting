@@ -24,4 +24,4 @@ A única regrinha a ser seguida é que a segunda linha do script tenha um coment
 
 Também é possível contribuir editando o próprio texto diretamente no repositório do github e mandando um Pull Request.
 
-Todas as contribuições recebem o merecido crédito na seção de [Agradecimentos](https://meleu.gitbooks.io/bashscripting/content/index.html#agradecimentos).
+Todas as contribuições recebem o merecido crédito na seção de {{ book.agradecimentos }}.
