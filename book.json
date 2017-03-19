@@ -1,5 +1,12 @@
 {
     "variables": {
+	    "comocontribuir": "[Como Contribuir](/CONTRIBUTING.md)",
+	    "variaveis_e_parametros": "[Variáveis e Parâmetros](/chapter-02/README.md)",
+	    "variaveis_do_usuario": "[Variáveis do Usuário](/chapter-02/variaveis-do-usuario.md)",
+	    "variaveis_do_shell": "[Variáveis do Shell](/chapter-02/variaveis-do-shell.md)",
+	    "variaveis_somente_leitura": "[Variáveis do Usuário](/chapter-02/variaveis-somente-leitura.md)",
+	    "parametros": "[Parâmetros](/chapter-02/parametros.md)",
+	    "substituicao_de_variaveis": "[Substituição de Variáveis](/chapter-02/substituicao-de-variaveis.md)",
         "referencias": "[Referências](/chapter-10/README.md)"
     },
     "title": "Programação em Bourne-Again Shell",
