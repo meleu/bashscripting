@@ -20,5 +20,4 @@ bash as regras são parecidíssimas:
 Enfim, todas aquelas regrinhas para identificadores de linguagens de
 programação também se aplica aqui, exceto aquela famosa sobre palavras
 reservadas. Você pode por exemplo fazer `if=lalala` que funcionará
-perfeitamente. Deve-se tomar muito cuidado para não fazer besteiras com
-as variáveis do shell (explicados no tópico {{ book.variaveis_do_shell }}).
+perfeitamente. Deve-se apenas tomar muito cuidado para não fazer alterar acidentalmente variáveis que possuem algum significado especial para o shell (explicados no tópico {{ book.variaveis_do_shell }}).
