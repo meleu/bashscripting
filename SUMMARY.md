@@ -1,6 +1,7 @@
 # Summary
 
 * [Introdução](README.md)
+  * [Como Contribuir](CONTRIBUTING.md)
 * [Começando](chapter-01/README.md)
 * [Variáveis e Parâmetros](chapter-02/README.md)
   * [Variáveis do Usuário](chapter-02/variaveis-do-usuario.md)
