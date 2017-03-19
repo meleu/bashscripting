@@ -3,8 +3,8 @@
 Como sabemos as variáveis podem ter seu valor modificado pelo usuário,
 mas se nós quisermos variáveis que NÃO possam ter seus valores alterados
 basta declararmos tal variável como somente-leitura. Para tornar uma
-variável read-only podemos usar o comando "readonly" ou então
-"declare -r".
+variável read-only podemos usar o comando `readonly` ou então
+`declare -r`.
 
 Veja os exemplos a seguir, ambos possuem o mesmo resultado:
 
@@ -13,6 +13,8 @@ $ readonly NOME="Meleu Zord"
 $ echo $NOME
 Meleu Zord
 ```
+
+é equivlente à
 
 ```
 $ declare -r NOME="Meleu Zord"
@@ -33,10 +35,10 @@ Meleu Zord
 importantes de um determinado script não possam ser sobregravadas,
 evitando assim algum resultado crítico.
 
-   O comando "readonly" quando usado sem parâmetros (ou o comando "declare"
-apenas com o parâmetro "-r") nos mostra todas as variáveis declaradas como
-somente-leitura. No exemplo a seguir se for usado "declare -r" no lugar de
-"readonly" teríamos a mesma saída.
+   O comando `readonly` quando usado sem parâmetros (ou o comando `declare`
+apenas com o parâmetro `-r`) nos mostra todas as variáveis declaradas como
+somente-leitura. No exemplo a seguir se for usado `declare -r` no lugar de
+`readonly` teríamos a mesma saída.
 
 ```
 $ readonly
@@ -49,8 +51,8 @@ SHELLOPTS="braceexpand:hashall:histexpand:monitor:ignoreeof:interactive-comments
 declare -ir UID="1005"
 ```
 
-   Existem várias variáveis somente-leitura que são inicializadas pelo
-shell, como USER, UID.
+Existem várias variáveis somente-leitura que são inicializadas pelo
+shell, como `USER`, `UID`.
 
    TODAS as variáveis readonly uma vez declaradas não podem ser "unsetadas"
 ou ter seus valores modificado. O único meio de apagar as variáveis
