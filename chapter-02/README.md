@@ -19,8 +19,6 @@ bash as regras são parecidíssimas:
 
 Enfim, todas aquelas regrinhas para identificadores de linguagens de
 programação também se aplica aqui, exceto aquela famosa sobre palavras
-reservadas. Você pode por exemplo fazer "if=lalala" que funcionará
-perfeitamente. A única coisa que não pode é usar um nome que já tenha sido
-definido para uma outra variável e que esta seja "readonly" (mais sobre
-isso adiante). Também deve-se tomar cuidado para não fazer bobagens com
+reservadas. Você pode por exemplo fazer `if=lalala` que funcionará
+perfeitamente. Deve-se tomar muito cuidado para não fazer besteiras com
 as variáveis do shell (explicados no tópico {{ book.variaveis_do_shell }}).
