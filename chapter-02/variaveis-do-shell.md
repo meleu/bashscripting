@@ -104,14 +104,14 @@ Veja algumas possibilidades (na man page do bash tem mais):
 
 caracter | o que faz:
 -------- | ----------
-\d | mostra a data atual
-\h | mostra o hostname
-\s | o nome do shell
-\t | a hora atual (no estilo 24 horas)
-\T | a hora atual (no estilo 12 horas)
-\u | nome do usuário que está usando o shell
-\w | nome do diretório atual (caminho todo)
-\W | nome do diretório atual (somente o nome do diretório)
+`\d` | mostra a data atual
+`\h` | mostra o hostname
+`\s` | o nome do shell
+`\t` | a hora atual (no estilo 24 horas)
+`\T` | a hora atual (no estilo 12 horas)
+`\u` | nome do usuário que está usando o shell
+`\w` | nome do diretório atual (caminho todo)
+`\W` | nome do diretório atual (somente o nome do diretório)
 
 
    Para aprender a fazer um monte de gracinhas com o `PS1` dê uma lida no
