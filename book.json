@@ -1,4 +1,7 @@
 {
+    "variables": {
+        "referencias": "[Referências](./chapter-10/README.md)"
+    },
     "title": "Programação em Bourne-Again Shell",
     "author": "meleu",
     "language": "pt",
@@ -18,8 +21,5 @@
                 "color": "#09F"
             }
         }
-    }
-    "variables": {
-        "referencias": "[Referências](./chapter-10/README.md)"
     }
 }
