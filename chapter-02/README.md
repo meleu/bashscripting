@@ -23,5 +23,4 @@ reservadas. Você pode por exemplo fazer "if=lalala" que funcionará
 perfeitamente. A única coisa que não pode é usar um nome que já tenha sido
 definido para uma outra variável e que esta seja "readonly" (mais sobre
 isso adiante). Também deve-se tomar cuidado para não fazer bobagens com
-as variáveis do shell (explicados no tópico [Variáveis do Shell](#variaveis-do-shell)).
-
+as variáveis do shell (explicados no tópico {{ book.variaveis_do_shell }}).
