@@ -136,7 +136,7 @@ o código será assim: `\e[1;33m`. Por isso faça os testes que você descobrir�
 as cores
 
 - Estas tabelas eu fiz graças a uma matéria que o aurélio escreveu
-sobre isso. Veja em http://verde666.org/coluna/
+sobre isso. Veja em http://aurelio.net/doc/coluna/
 
 No tópico {{ book.funcoes_como_comandos }} você verá o Mfunctions, ele
 contém uma função que mostra todas as combinações de cores possíveis.
