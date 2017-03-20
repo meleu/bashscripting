@@ -35,9 +35,9 @@ Entre com o nome do diretório: dir_invalido
 'cd dir_invalido' retornou "insucesso" (1)
 ```
 
-   O valor de retorno do comando "cd /usr" foi 0 portanto foi executado
-com sucesso, já o retorno de "cd /dir_invalido" foi 1 porque ocorreu um
-erro. Agora repare no final que mesmo com um "cd /usr" continuo no
-diretório HOME (~). Isto prova que um shell script usa um shell a parte
+O valor de retorno do comando `cd /usr` foi 0 portanto foi executado
+com sucesso, já o retorno de `cd /dir_invalido` foi 1 porque ocorreu um
+erro. Agora repare no final que mesmo com um `cd /usr` continuo no
+diretório `HOME` (`~`). Isto prova que um shell script usa um shell a parte
 (shell "filho") e não o shell que chama o script (shell pai).
 (Chato ficar lendo isso toda hora né? Esta foi a última vez! :P)
