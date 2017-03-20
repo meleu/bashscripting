@@ -42,11 +42,11 @@ chega! :)
 
    A esta altura você já deve ter se perguntado "Como faço para imprimir
 caracteres nova linha ou beep?!". Os mais malandrinhos devem ter tentado um
-contra-barra (backslash) '\', mas você não pode simplesmente fazer isso.
-É necessário usar o parâmetro "-e" com o echo. Este parâmetro permite que
+contra-barra (backslash) `\`, mas você não pode simplesmente fazer isso.
+É necessário usar o parâmetro `-e` com o `echo`. Este parâmetro permite que
 usemos sequências de escape contra-barra.
-   As sequências são iguais a da linguagem C, exemplo: \n para nova
-linha, \a para beep, \b para backspace, etc...
+   As sequências são iguais a da linguagem C, exemplo: `\n` para nova
+linha, `\a` para beep, `\b` para backspace, etc...
    Veja este exemplo:
 
 ```
@@ -55,34 +55,34 @@ module caiu de cara tentando "top soul".
 Que paia!
 ```
 
-   O -e é também usado para escrever coloridinho (ai que fofo!), e outras
+   O `-e` é também usado para escrever colorido, e outras
 coisas interessantes. Veremos isso no tópico seguinte.
 
 
 
 ### Sequências de Escape ANSI
 
-Para usar cores a sequência de escape é "\e[<NUM>m" (os sinais '<' e '>'
+Para usar cores a sequência de escape é `\e[<NUM>m` (os sinais `<` e `>`
 não entram!). Veja um exemplo (mais a frente você verá tabelas com os
 significados destas sequências):
 
 {% codesnippet "./src/amarelinho.sh" %}{% endcodesnippet %}
 
-   Agora uma explicação ligeira: o \e diz ao echo que o que vem depois é
+   Agora uma explicação ligeira: o `\e` diz ao echo que o que vem depois é
 uma sequência de escape.
 
-   Se você der a sequência '[<num>C', onde num é um número qualquer, o
-cursor vai andar "num" caraceteres para a direita. Acima eu uso a variável
-POSICAO para mover o cursor para o centro da linha (veja o cálculo no
+   Se você der a sequência `[<num>C`, onde num é um número qualquer, o
+cursor vai andar `num` caraceteres para a direita. Acima eu uso a variável
+`POSICAO` para mover o cursor para o centro da linha (veja o cálculo no
 código).
 
-   O comando '[<num>m' muda para a cor "num". Cada cor tem um código
+   O comando `[<num>m` muda para a cor `num`. Cada cor tem um código
 próprio. No exemplo acima o 33 faz ficar marrom, porém combinando com o 1
 fica amarelo (isso no modo texto, pois no xterm, por exemplo, o 1 faz o
 marrom ficar em negrito. veja OBSERVAÇÕES mais adiante).
 
    Veja uma tabela com os códigos de movimentação de cursor que eu conheço
-(os caracteres '<' e '>' devem ser ignorados):
+(os caracteres `<` e `>` devem ser ignorados):
 
 Código | O que faz
 --- | ---
@@ -111,7 +111,7 @@ Código | O que faz
    Sim, a lista é grande... Faça uns testes para praticar um pouquinho.
 
    Agora uma tabelinha dos atributos e seus números (N deve estar no
-formato "\e[<N>m"):
+formato `\e[<N>m`):
 
 Atributo | N | Cor | X
 -------- | - | --- | --
@@ -125,19 +125,20 @@ Vídeo reverso | 7 | Ciano | 6
 | - | - | Branco | 7
 
 **OBSERVAÇÕES:**
+
 - Negrito, Sublinhado e Piscando possuem comportamentos diferentes no
 console e nos emuladores de terminal. Principalmente quando temos negrito
 sendo usado com cores.
 
- Por exemplo, o código "\e[33m" irá ativar o marrom
+ Por exemplo, o código `\e[33m` irá ativar o marrom
 mas se for usado com o atributo de negrito ficará amarelo, e
-o código será assim: "\e[1;33m". Por isso faça os testes que você descobrirá
+o código será assim: `\e[1;33m`. Por isso faça os testes que você descobrirá
 as cores
 
 - Estas tabelas eu fiz graças a uma matéria que o aurélio escreveu
 sobre isso. Veja em http://verde666.org/coluna/
 
-No tópico "6.1 Funções como comandos" você verá o Mfunctions, ele
+No tópico {{ book.funcoes_como_comandos }} você verá o Mfunctions, ele
 contém uma função que mostra todas as combinações de cores possíveis.
 
 
