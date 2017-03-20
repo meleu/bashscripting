@@ -4,7 +4,7 @@ Nos já usamos o echo para escrever na tela, mas aqui vamos tratar de
 alguns "segredinhos" (que não são tão secretos assim).
 
 Existem alguns momentos que você não quer que a saída do echo pule de
-linha automaticamente. Para isso use o parâmetro "-n". Este parâmetro é
+linha automaticamente. Para isso use o parâmetro `-n`. Este parâmetro é
 útil quando você vai entrar com algo após o echo. Veja este script:
 
 {% codesnippet "./src/filetype.sh" %}{% endcodesnippet %}
