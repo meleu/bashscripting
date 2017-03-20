@@ -122,7 +122,7 @@ Cor X para o segundo plano | 4X | Marrom | 3
 Sublinhado | 4 | Azul | 4
 Piscando (blink) | 5 | Roxo | 5
 Vídeo reverso | 7 | Ciano | 6
-|             |   | Branco | 7
+| - | - | Branco | 7
 
 **OBSERVAÇÕES:**
 - Negrito, Sublinhado e Piscando possuem comportamentos diferentes no
