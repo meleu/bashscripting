@@ -17,7 +17,7 @@ $ echo $URL # observe que URL nao foi alterado
 ```
 
 
-- `${variavel:=string}`
+### `${variavel:=string}`
 
 Se "variavel" não estiver sido definida ou for vazia, receberá
 "string". Exemplo:
@@ -30,7 +30,7 @@ http://meleu.da.ru
 ```
 
 
-- `${variavel:?string}`
+### `${variavel:?string}`
 
 Se "variavel" não estiver sido definido ou for vazia, "string" será
 escrito em stderr (saída de erro padrão). O valor da variável não é
@@ -44,7 +44,7 @@ $ echo $EDITOR
 ```
 
 
-- `${variavel:+string}`
+### `${variavel:+string}`
 
 Se "variavel" estiver definida, será substituída por "string" mas seu
 valor não será alterado. Exemplo:
