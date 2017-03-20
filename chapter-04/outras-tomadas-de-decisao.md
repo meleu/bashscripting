@@ -1,10 +1,10 @@
 ## Tomadas de decisão com && e ||
 
-Esta maneira de tomar decisões é bem compacta, mas não aceita "else".
-Eu, particularmente, prefiro usar esta estrutura quando vou fazer uma
-tomada de decisão e não preciso de "else".
+Esta maneira de tomar decisões é bem compacta e prática.
+Para estruturas pequenas, é até melhor usar esta maneira do que
+o tradicional "if-then-else".
 
-   A maneira de usar é:
+A maneira de usar é:
 
     comando1 && comando2
     comando1 || comando2
@@ -21,10 +21,9 @@ Veja um exemplo bem simples:
 $ [ -d ~/tempdir ] || mkdir ~/tempdir
 ```
 
-Como você deve estar lembrado, "[ -d ~/tempdir ]" é o mesmo que
-"test -d ~/tempdir" e retornará 0 se existir o diretório ~/tempdir. Caso
-não exista ele retornará 1, e neste caso o "mkdir ~/tempdir" será
-executado.
+Como você deve estar lembrado, `[ -d ~/tempdir ]` é o mesmo que
+`test -d ~/tempdir` e retornará 0 se existir o diretório `~/tempdir`. Caso
+não exista ele retornará 1, e neste caso o `mkdir ~/tempdir` será executado.
 
 Vejamos um parecido usando o &&:
 
@@ -40,8 +39,8 @@ comando?!", a próxima seção lhe trará respostas...
 ### Listas
 
 As listas de comandos servem para agrupar comandos (meio lógico, não?).
-Podem ser representadas por (parenteses) ou {chaves}. A diferença é que
-os (parenteses) executam os comandos numa shell a parte e as {chaves}
+Podem ser representadas por `(parenteses)` ou `{chaves}`. A diferença é que
+os `(parenteses)` executam os comandos numa shell a parte e as `{chaves}`
 executam no shell atual.
 
 Execute comando a seguir e tente entendê-lo (está certo... são vários
@@ -57,9 +56,9 @@ ls
 ```
 
    E observe que ao final da execução você estará no diretório /usr/doc,
-o que comprova que com as {chaves} os comandos são executados no shell
-atual, se você trocar as {chaves} por (parênteses) observará que o seu
+o que comprova que com as `{chaves}` os comandos são executados no shell
+atual, se você trocar as `{chaves}` por `(parênteses)` observará que o seu
 diretório não se alterará.
 
-FYI: para saber o diretório atual o comando a ser usado é o "pwd".
+FYI: para saber o diretório atual o comando a ser usado é o `pwd`.
 
