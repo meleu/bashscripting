@@ -27,7 +27,7 @@ root
 
 ##### xargs
 
-   O xargs transforma stdin em argumentos da linha de comando. Vamos usar
+   O `xargs` transforma stdin em argumentos da linha de comando. Vamos usar
 o exemplo anterior de novo:
 
 ```
@@ -45,7 +45,7 @@ meleu hack root
 ```
 
    Como eu gosto do find não resisti e colocarei um comando interessante
-que usa pipe e xargs:
+que usa pipe e `xargs`:
 
 ```
 $ find / -perm -2 ! -type l ! -type c | xargs ls -ld > wordwritable.txt
@@ -57,11 +57,11 @@ manpages.
 
 ##### tee
 
-   Outro comando bom de se usar com pipe é o "tee". Ele faz com que a
-saída do programa vá para a saída padrão, normalmente a tela (écran) *E*
+   Outro comando bom de se usar com pipe é o `tee`. Ele faz com que a
+saída do programa vá para a saída padrão, normalmente a tela **E**
 para um arquivo ao mesmo tempo.
 
-   É como se você fizesse "programa > arquivo" só que o saída do programa
+   É como se você fizesse `programa > arquivo` só que o saída do programa
 também seria escrita na saída padrão. Experimente:
 
 ```
