@@ -17,55 +17,55 @@ assim:
 {% codesnippet "./src/amigos.regiao" %}{% endcodesnippet %}
 
 Agora veja o script que usará as informações contidas no arquivo
-"amigos.regiao":
+`amigos.regiao`:
 
 {% codesnippet "./src/listamigos.sh" %}{% endcodesnippet %}
 
-   Deu pra sacar direitinho? Qualquer dúvida é só dar uma olhada nas man
+Deu pra sacar direitinho? Qualquer dúvida é só dar uma olhada nas man
 pages dos comandos que estão gerando as dúvidas.
 
-   Mas a coisa não é tão simples assim... Se dentro do loop você quisesse
+Mas a coisa não é tão simples assim... Se dentro do loop você quisesse
 usar o comando read para ler do teclado, seria necessário pegar a entrada
 de "/dev/tty". Sabendo que o /dev/tty é o terminal que você está usando.
 
-   Se você tiver muitos amigos no arquivo "amigos.regiao" não vai
+Se você tiver muitos amigos no arquivo "amigos.regiao" não vai
 conseguir ver todos, pois a lista não caberá numa tela só. Neste caso, o
 script a seguir será melhor que o "listamigos.sh".
 
 {% codesnippet "./src/listamigos2.sh" %}{% endcodesnippet %}
 
-   Se quiser comprovar com seus próprios olhos a necessidade de pegar a
+Se quiser comprovar com seus próprios olhos a necessidade de pegar a
 entrada de "/dev/tty" é só retirar o "< /dev/tty" naquele read dentro do
 loop.
 
-   OBS.: Curiosamente o exit dentro de um loop que recebe dados de um
+OBS.: Curiosamente o exit dentro de um loop que recebe dados de um
 pipe funciona como se fosse um break. Pra comprovar isso coloque no final
 do script listamigos2.sh um "echo bla bla bla" e quando o script mostrar
 "Entre <ENTER> para continuar ou 'sair' para sair: " entre com 'sair'.
 
-   Isso ocorre porque durante o "pipeamento" os comandos são executados
+Isso ocorre porque durante o "pipeamento" os comandos são executados
 num subshell (um shell a parte ou shell filho, como preferir), e o exit
 faz sair deste subshell.
 
-   Vejamos um exemplo onde você verá que o exit funciona como o break:
+Vejamos um exemplo onde você verá que o exit funciona como o break:
 
 {% codesnippet "./src/bruteftp.sh" %}{% endcodesnippet %}
 
-   O "pipeamento" para while também é usado no Mextract.sh.
+O "pipeamento" para while também é usado no Mextract.sh.
 
 
 ### redirecionando de arquivo para while
 
-   Esse método é bem esquisitinho... Mas vou colocar ele aí para quem
+Esse método é bem esquisitinho... Mas vou colocar ele aí para quem
 quiser usar.
 
-   Agora veremos um arquivo onde eu tenho os telefones de alguns amigos.
+Agora veremos um arquivo onde eu tenho os telefones de alguns amigos.
 A disposição das informações dentro do arquivo é um pouco parecida com o
 "amigos.regiao", veja:
 
 {% codesnippet "./src/agenda.tel" %}{% endcodesnippet %}
 
-   Vamos ao script que se utilizará das informações de "agenda.tel":
+Vamos ao script que se utilizará das informações de "agenda.tel":
 
 {% codesnippet "./src/listartel.sh" %}{% endcodesnippet %}
 
