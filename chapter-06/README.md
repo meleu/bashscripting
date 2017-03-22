@@ -25,14 +25,10 @@ Uhmmm... Sem falar muito eu já emendo outro código:
 Só umas informações adicionais:
 
 - O return quando executado interrompe a execução da função e a execução
-  passa para a instrução imediatamente posterior a qual a função foi chamada;
-- O valor mais alto que uma função pode retornar é 256 e o mais baixo...
-  bem, é um número de módulo grande. :P Se precisar de valores positivos
-  maiores que 256 retorne-o como negativo e depois converta-o para
-  positivo novamente (como? ah meu amigo... saia da frente do computador
-  e vá procurar um livro de matemática!);
-- Se quer saber mais detalhes sobre funções o capítulo 23 do Advanced
-  Bash-Scripting Guide vai lhe ser muito útil.
+  passa para a instrução imediatamente posterior a qual a função foi chamada.
+- O valor mais alto que uma função pode retornar é 256.
+- Se quer saber mais detalhes sobre funções o Functions do Advanced
+  Bash-Scripting Guide vai lhe ser muito útil (ver {{ book.referencias }}).
 
 
 Fique com mais este código que eu achei bem interessante. ;-)
