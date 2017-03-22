@@ -16,11 +16,9 @@ awk; **Expressões Regulares (ERs)**;
 ## Comandos:
 
 **grep**; **sed**; **cut**; tr; paste; sort; uniq; bc; **expr**; **wc**; eval
-(na manpage do bash); trap (idem); comm; join; netcat, curl e lynx (este
+(na manpage do bash); trap (idem); comm; join; netcat, curl e lynx (estes
 três últimos são
-muito úteis se você quer fazer scripts que usem o que a rede tem a nos
-oferecer. o netcat, vulgo nc, pode ser encontrado em
-http://www.atstake.com/research/tools).
+muito úteis se você quer fazer scripts que se comuniquem via rede).
 
 Cara... sabendo tudo isso, você já será um iniciado. A partir daí o
 que manda é a experiência, prática, prática e prática. Muita prática! Um
