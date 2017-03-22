@@ -4,9 +4,9 @@ Funções são interessantes para quando você precisa fazer uma
 determinada coisa várias vezes num mesmo script.
 
 Uma função é como se fosse um script dentro do script, sendo assim ele
-também usa o mesmo esquema de parâmetros de um script comum ($1 para
-primeiro parâmetro, $2 para segunda, e todas aquelas regras explicadas em
-2.4. Parâmetros com a exceção do $0, que não retorna o nome da função!).
+também usa o mesmo esquema de parâmetros de um script comum (`$1` para
+primeiro parâmetro, `$2` para segunda, e todas aquelas regras explicadas em
+{{ book.parametros }} com a exceção do `$0`, que não retorna o nome da função!).
 Uma função também é capaz de retornar um valor usando o
 "return ValorDeRetorno", sendo que ValorDeRetorno ficará armazenado em
 "$?", vale observar também que só é possível retornar valores inteiros.
