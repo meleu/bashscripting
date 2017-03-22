@@ -34,7 +34,8 @@ documentação oficial da GNU.
 
 - [Bourne-Again SHell Home Page](http://cnswww.cns.cwru.edu/~chet/bash/bashtop.html):
 Página oficial do Bourne-Again Shell.
-                        
+
+- [funcoeszz](http://funcoeszz.net/): Funções ZZ é uma coletânea com várias funcoes de utilidades diversas, acessíveis e prontos para serem usados na linha de comando.
 
 - [Expressões Regulares](http://aurelio.net/regex/guia/):
 Um guia sobre expressões regulares (sim! em português!). Leitura obrigatória!
