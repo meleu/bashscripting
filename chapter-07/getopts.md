@@ -47,6 +47,3 @@ importante: praticar!
 {% codesnippet "./src/getopts.sh" %}{% endcodesnippet %}
 
 Execute este código e tire suas próprias conclusões.
-
-Você pode ver mais um script que usa getopts no tópico "Exemplos Variados".
-
