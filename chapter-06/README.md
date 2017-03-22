@@ -22,7 +22,7 @@ Uhmmm... Sem falar muito eu já emendo outro código:
 
 {% codesnippet "./src/maior.sh" %}{% endcodesnippet %}
 
-Só umas informações adicionais:
+Só mais algumas informações adicionais:
 
 - O return quando executado interrompe a execução da função e a execução
   passa para a instrução imediatamente posterior a qual a função foi chamada.
