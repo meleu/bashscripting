@@ -3,16 +3,7 @@
 OBS.: Nesta seção não tem nada sobre shell script. É apenas uma
 conversa...
 
-UFA!! Deve fazer aproximadamente um ano que eu comecei a escrever este
-texto! É isso mesmo! E aí cheguei naquela fase de nossa vida onde pagamos
-por nossos pecados: vestibular. Cheguei a pensar que nunca ia terminar
-este texto, ficava estudando pro vest o tempo todo não tinha tempo pra
-ficar no computador. Não adiantou muita coisa, eu não passei... Deve ser
-porque eu pequei demais e tenho que ficar mais um ano pagando por isso...
-Bom, chega de ficar me lamentando! Vou parar de lamentar e ficar mais um
-ano estudando...
-
-   Sabe de uma coisa?... As vezes conversando com outras pessoas sobre
+Sabe de uma coisa?... As vezes conversando com outras pessoas sobre
 o movimento FreeSoftware algumas acham que é maluquice, que a gente é
 otário de ficar trabalhando de graça, sem ganhar nada. Deixa eu contar
 uma coisa... Eu estou aqui, num computador com uma configuração de
@@ -21,7 +12,7 @@ muitos como "imprestável". Mas veja bem: "considerada por muitos". Pra
 mim essa máquina ainda vai durar alguns anos com esta mesma configuração.
 E sabe por quê? Software Livre meu caro, Software Livre...
 
-   Já parou pra ver como que os FreeSoftwares rodam bem em máquinas que
+Já parou pra ver como que os FreeSoftwares rodam bem em máquinas que
 não são das mais "turbinadas"? Por que será que os softwares da Micro$oft
 precisam de hardware cada vez mais potentes? Um programador que trabalha
 na Micro$oft não deve ser nenhum José Mané, será que ele não tem

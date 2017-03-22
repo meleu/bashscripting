@@ -19,7 +19,7 @@
     * [test](chapter-04/test.md)
     * [let](chapter-04/let.md)
   * [case](chapter-04/case.md)
-  * [Decisões Usando `&&` e `||`](chapter-04/outras-tomadas-de-decisao.md)
+  * [Decisões Usando && e \|\|](chapter-04/outras-tomadas-de-decisao.md)
 * [Estruturas de Repetição](chapter-05/README.md)
   * [for](chapter-05/for.md)
   * [while](chapter-05/while.md)
@@ -40,4 +40,4 @@
   * [inseretxt.sh](chapter-09/README.md#inseretxtsh)
   * [Mextract.sh](chapter-09/README.md#mextractsh)
 * [Referências](chapter-10/README.md)
-* [Considerações Finais](chapter-11/README.md)
+
