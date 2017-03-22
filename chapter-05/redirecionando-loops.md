@@ -1,10 +1,10 @@
 ## Redirecionando loops
 
-Lendo o livro "Linux: Programação Shell" (ver Referências) eu aprendi
+Lendo o livro "Linux: Programação Shell" (ver {{ book.referencias }}) eu aprendi
 umas formas de usar redirecionamento para loops. Vou tentar passar os
 esquemas aqui através de exemplos meramente ilustrativos. Vamos a eles,
-lembrando daqueles conceitos passados no tópico 3. (principalmente sobre
-o read e sobre os redirecionamentos).
+lembrando daqueles conceitos passados capítulo de {{ book.entrada_e_saida }} (principalmente sobre
+o `read` e sobre os redirecionamentos).
 
 
 ### "pipeando" para o while
