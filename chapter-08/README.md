@@ -26,3 +26,5 @@ dia eu ainda chego a esse nível...
 
 Eu sei que está na lista ali em cima, mas vale salientar: ERs, grep e
 sed são REALMENTE MÚITO ÚTEIS!!!
+
+**Capítulo 09: [Exemplos Variados →](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-09)**
