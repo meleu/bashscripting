@@ -1,5 +1,7 @@
 # Referências
 
+- [https://meleu.sh/](https://meleu.sh/) - Um site que iniciei em Janeiro/2020 e desde então venho
+compartilhando várias dicas sobre shell e linha de comando de uma maneira geral.
 
 - [Guia focalinux](http://www.focalinux.org): No endereço a seguir você encontrará ótimos guias
 sobre o GNU/Linux, divididos em níveis (iniciante,
