@@ -20,7 +20,7 @@ se aprofundar no assunto este é o texto que deve
 ler! Muitos códigos para se ler e aprender!
 
 - [UNIX Bourne Shell Programming](http://dfrench.hypermart.net/css/Training/Shell%20Programming/toc.html):
-meio antiguinho (1991). mas mesmo assim 
+meio antiguinho (1991). mas mesmo assim
 me foi útil.
 
 - [Bash FAQ](http://mywiki.wooledge.org/BashFAQ): Perguntas frequentes sobre
@@ -55,3 +55,5 @@ Uma rápida introdução ao awk em português.
 
 - [OverTheWire wargames](http://overthewire.org/wargames/):
 Dê uma olhada aqui se quiser saber sobre wargames.
+
+**Capítulo 11: [Considerações Finais →](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-11)**
