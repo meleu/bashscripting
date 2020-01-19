@@ -11,6 +11,9 @@ dos recursos colaborativos presentes no github.
 
 Caso queira contribuir para a melhoria deste livro, veja as instruções em {{ book.como_contribuir }}.
 
+Em Janeiro/2020 eu lancei um site onde vou compartilhando meu conhecimento sobre shell script e linha
+de comando de uma maneira geral. Confira em [https://meleu.sh/](https://meleu.sh/).
+
 Por questões históricas a versão original deste texto ainda pode ser encontrada:
 http://meleu.github.io/txts/bashscripting.txt.
 
