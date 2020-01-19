@@ -31,3 +31,5 @@ exemplos olhe as Referências.
 ## Mextract.sh
 
 {% codesnippet "./src/Mextract.sh" %}{% endcodesnippet %}
+
+**Capítulo 10: [Referências →](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-10)**
