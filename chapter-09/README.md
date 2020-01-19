@@ -1,3 +1,5 @@
+**Capítulo 08: [Coisas úteis de se aprender ←](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-08)**
+
 # Exemplos Variados
 
 Aqui pretendo listar alguns scripts que possuem uma ou mais das seguintes

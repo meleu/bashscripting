@@ -1,3 +1,5 @@
+**Capítulo 10: [Referências ←](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-10)**
+
 # Considerações Finais
 
 OBS.: Nesta seção não tem nada sobre shell script. É apenas uma
@@ -20,7 +22,7 @@ capacidade de escrever um software levinho? Será que essas megaempresas
 de software não têm algum esquema com megaempresas de hardware? Estes
 softwares são pesados porque necessitam ser assim ou isso é de propósito?
    Ficam essas perguntas no ar...
-   
+
    Mas voltando ao FreeSoftware. Minha modesta maquininha aqui vai durar
 anos porque eu uso FreeSoftware e esse tipo de software não precisa ser
 pesado, não precisa ter interfaces que encham nossos olhos com tanta

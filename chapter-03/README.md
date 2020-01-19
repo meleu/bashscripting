@@ -1,3 +1,5 @@
+**Capítulo 02: [Variáveis e Parâmetros ←](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-02)**
+
 # Entrada e Saída
 
 Neste capítulo veremos algumas maneiras de se comunicar com o usuário e também algumas técnicas de redirecionamento de entrada/saída de programas.
