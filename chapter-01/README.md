@@ -80,3 +80,4 @@ ele usa outra instância do shell**, e não a instância atual. É importante te
 isso em mente quando formos usar variáveis.
 
 Por falar em variáveis, o próximo capítulo trata exatamente disso...
+**Capítulo 02: [Variáveis e Parâmetros →](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-02)**
