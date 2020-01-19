@@ -39,4 +39,4 @@ Ah! Deixa eu dizer só mais uma coisinha: é possível declarar
 função(ões) dentro de função. Desta vez não darei exemplos, faça os
 testes por conta própria! :-)
 
-
+**Capítulo 07: [Tornando seu script amigável →](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-07)**
