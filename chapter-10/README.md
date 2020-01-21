@@ -1,4 +1,4 @@
-**Capítulo 09: [Exemplos Variados ←](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-09)**
+**Capítulo 09: [Exemplos Variados ←](/chapter-09)**
 
 # Referências
 
@@ -58,4 +58,4 @@ Uma rápida introdução ao awk em português.
 - [OverTheWire wargames](http://overthewire.org/wargames/):
 Dê uma olhada aqui se quiser saber sobre wargames.
 
-**Capítulo 11: [Considerações Finais →](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-11)**
+**Capítulo 11: [Considerações Finais →](/chapter-11)**

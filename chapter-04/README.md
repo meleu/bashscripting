@@ -1,4 +1,4 @@
-**Capítulo 03: [Entrada e Saída ←](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-03)**
+**Capítulo 03: [Entrada e Saída ←](/chapter-03)**
 
 # Comandos de Tomadas de Decisão
 
@@ -8,4 +8,4 @@ O jeito como as estruturas estão explicadas é o que eu uso, mas não
 é o único. Se você quer uma referência mais completa veja a manpage do
 bash.
 
-**Capítulo 05: [Comandos de Loop →](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-05)**
+**Capítulo 05: [Comandos de Loop →](/chapter-05)**

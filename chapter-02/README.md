@@ -1,4 +1,4 @@
-**Capítulo 1: [Começando ←](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-01)**
+**Capítulo 1: [Começando ←](/chapter-01)**
 
 # Variáveis e Parâmetros
 
@@ -24,4 +24,4 @@ programação também se aplica aqui, exceto aquela famosa sobre palavras
 reservadas. Você pode por exemplo fazer `if=lalala` que funcionará
 perfeitamente. Deve-se apenas tomar muito cuidado para não fazer alterar acidentalmente variáveis que possuem algum significado especial para o shell (explicados no tópico {{ book.variaveis_do_shell }}).
 
-**Capítulo 03: [Entrada e Saída →](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-03)**
+**Capítulo 03: [Entrada e Saída →](/chapter-03)**

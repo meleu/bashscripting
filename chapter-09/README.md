@@ -1,4 +1,4 @@
-**Capítulo 08: [Coisas úteis de se aprender ←](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-08)**
+**Capítulo 08: [Coisas úteis de se aprender ←](/chapter-08)**
 
 # Exemplos Variados
 
@@ -34,4 +34,4 @@ exemplos olhe as Referências.
 
 {% codesnippet "./src/Mextract.sh" %}{% endcodesnippet %}
 
-**Capítulo 10: [Referências →](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-10)**
+**Capítulo 10: [Referências →](/chapter-10)**

@@ -1,4 +1,4 @@
-**Capítulo 07: [Tornando seu script amigável ←](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-07)**
+**Capítulo 07: [Tornando seu script amigável ←](/chapter-07)**
 
 # Coisas úteis de se aprender
 
@@ -29,4 +29,4 @@ dia eu ainda chego a esse nível...
 Eu sei que está na lista ali em cima, mas vale salientar: ERs, grep e
 sed são REALMENTE MÚITO ÚTEIS!!!
 
-**Capítulo 09: [Exemplos Variados →](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-09)**
+**Capítulo 09: [Exemplos Variados →](/chapter-09)**

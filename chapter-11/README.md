@@ -1,4 +1,4 @@
-**Capítulo 10: [Referências ←](https://github.com/redmanndotsh/bashscripting/tree/master/chapter-10)**
+**Capítulo 10: [Referências ←](/chapter-10)**
 
 # Considerações Finais
 
