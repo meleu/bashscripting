@@ -1,3 +1,5 @@
+**Capítulo 05: [Comandos de Loop ←](/chapter-05)**
+
 # Funções
 
 Funções são interessantes para quando você precisa fazer uma
@@ -39,4 +41,4 @@ Ah! Deixa eu dizer só mais uma coisinha: é possível declarar
 função(ões) dentro de função. Desta vez não darei exemplos, faça os
 testes por conta própria! :-)
 
-
+**Capítulo 07: [Tornando seu script amigável →](/chapter-07)**

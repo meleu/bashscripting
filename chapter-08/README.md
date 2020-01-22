@@ -1,3 +1,5 @@
+**Capítulo 07: [Tornando seu script amigável ←](/chapter-07)**
+
 # Coisas úteis de se aprender
 
 Não basta saber somente sobre o bash! Existem muitas outras coisas
@@ -26,3 +28,5 @@ dia eu ainda chego a esse nível...
 
 Eu sei que está na lista ali em cima, mas vale salientar: ERs, grep e
 sed são REALMENTE MÚITO ÚTEIS!!!
+
+**Capítulo 09: [Exemplos Variados →](/chapter-09)**

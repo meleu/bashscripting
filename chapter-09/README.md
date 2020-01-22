@@ -1,3 +1,5 @@
+**Capítulo 08: [Coisas úteis de se aprender ←](/chapter-08)**
+
 # Exemplos Variados
 
 Aqui pretendo listar alguns scripts que possuem uma ou mais das seguintes
@@ -31,3 +33,5 @@ exemplos olhe as Referências.
 ## Mextract.sh
 
 {% codesnippet "./src/Mextract.sh" %}{% endcodesnippet %}
+
+**Capítulo 10: [Referências →](/chapter-10)**
