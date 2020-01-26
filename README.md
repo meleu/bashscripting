@@ -2,69 +2,85 @@
 
 A versão web de leitura amigável deste texto está disponível aqui: https://meleu.gitbooks.io/bashscripting/content/
 
----
-
-Este texto foi originalmente escrito em 2002, época que eu tinha mais tempo
-livre. Esta versão aqui é uma tentativa de atualizar o texto, baseado em práticas
+Este texto foi originalmente escrito em 2002 ([link do original](http://meleu.github.io/txts/bashscripting.txt)),
+Esta versão aqui é uma tentativa de atualizar o texto, baseado em práticas
 mais modernas de programação shell, e também tentando aproveitar
 dos recursos colaborativos presentes no github.
 
-Caso queira contribuir para a melhoria deste livro, veja as instruções em {{ book.como_contribuir }}.
 
-Em Janeiro/2020 eu lancei um site onde vou compartilhando meu conhecimento sobre shell script e linha
-de comando de uma maneira geral. Confira em [https://meleu.sh/](https://meleu.sh/).
+## Contribuições
 
-Por questões históricas a versão original deste texto ainda pode ser encontrada:
-http://meleu.github.io/txts/bashscripting.txt.
+Existem duas maneiras de contribuir: enviando melhorias via Pull Requests para o
+[repositório do livro](https://github.com/meleu/bashscripting) ou doações.
 
----
+Para contribuir com melhorias para o livro, veja as instruções em {{ book.como_contribuir }}.
 
+Para contribuir com doações (ficarei muito grato e usarei isso como um estímulo para continuar
+atualizando este livro):
+
+### PicPay
+
+- [🍬 R$ 1](https://picpay.me/meleuzord/1.00)
+- [☕ R$ 5](https://picpay.me/meleuzord/5.00)
+- [🍺 R$ 10](https://picpay.me/meleuzord/10.00)
+- [🎁 Definir valor](https://picpay.me/meleuzord/)
+
+Se você não tem conta no PicPay, pode criar a sua [através deste link](https://www.picpay.com/convite?UMYSKN) que você ganha R$ 10 de cashback no seu primeiro pagamento.
+
+### PayPal
+
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+<input type="hidden" name="cmd" value="_s-xclick" />
+<input type="hidden" name="hosted_button_id" value="TJCC3ZV5EQAM4" />
+<input type="image" src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" border="0" name="submit" title="PayPal - The safer, easier way to pay online!" alt="Faça doações com o botão do PayPal" />
+<img alt="" border="0" src="https://www.paypal.com/pt_BR/i/scr/pixel.gif" width="1" height="1" />
+</form>
+
+
+## Apresentação
 
 Estou partindo do princípio de que se você está aqui lendo isso significa
 que não tem dúvidas quanto a utilidade de um shell script. Então podemos
 pular esta parte.
 
-Na época que eu escrevi este texto o material sobre bash em português era
-bem escasso. Agora o cenário já é outro, temos alguns bons livros sobre o
-assunto. Mesmo assim decidi dar uma atualizada nesse texto introduzindo
-os meus conhecimentos atuais.
-
-Por falar em meus conhecimentos, não pense que sou um expert ou um guru em 
-shell scripting, eu sequer trabalho com Linux! :-) Sou apenas um
-hobbista fanático. Sempre curti programação, sou usuário do Linux desde 1999,
-sou formado em Ciência da Computação mas o ~~dinheiro~~ destino me fez partir
+Este livro é mantido por [meleu](https://github.com/meleu/).
+Sou usuário do Linux desde 1999, e desde então fascinado pelo Linux, linha
+de comando, shell script, linguagem C, redes e nerdezas afins.
+Sou formado em Ciência da Computação mas o acaso me fez partir
 para outra área. Em meados de 2016 recomecei a praticar bastante bash scripting
 quando comecei a me envolver com o projeto [RetroPie](https://retropie.org.uk/)
 e a partir daí me animei em revisitar este texto aqui.
 
-Minhas fontes de pesquisa serão muito úteis para o leitor. Portanto consulte a
-seção de referências que você vai achar muita coisa boa.
+## Pré-requisitos
 
-O único pré-requisito para o entendimento deste texto é que o leitor
-tenha uma mínima familiaridade com os comandos UNIX. Se você não tem (ou acha
-que não tem) este pré-requisito, você pode adquirí-lo lendo o [Guia Foca Linux](http://www.guiafoca.org/)
-ou algum outro desses tutoriais que existem pela web. Uma noçãozinha de
-programação (algoritmos) cairia bem.
+- Vontade de aprender.
+- Alguma mínima familiaridade com os comandos básicos do UNIX.
+- Acesso a um terminal.
+- (Uma noçãozinha de algoritmos ajudaria, mas não é obrigatório.)
 
-Se você quer muito praticar bash scripting mas por algum motivo não tem acesso
-a um computador com Linux (computador não é seu, é do trabalho, da
-escola/faculdade), recomendo fortemente que você conheça o projeto [Cygwin](https://www.cygwin.com/).
+Se você não tem noção alguma de linha de comando, recomendo a leitura do [Guia Foca Linux](http://www.guiafoca.org/)
+ou algum outro desses tutoriais que existem pela web.
+
+Se por algum motivo você só tem acesso a uma máquina Windows e não pode instalar o Linux
+(computador não é seu, é do trabalho, da escola/faculdade), recomendo fortemente que você
+conheça o projeto [Cygwin](https://www.cygwin.com/).
 Trata-se de uma forma de obter um ambiente bastante similar à uma distribuição
 Linux rodando direto do Windows. Sem necessidade de máquina virtual alguma.
 
-É de extrema importância que você vá praticando assim que aprender algo novo, isso ajuda a se familiarizar e memorizar as coisas.
+Se você não tem acesso a computador algum e for fanático o suficiente para praticar no
+smartphone Android, procure um app chamado [termux](https://termux.com/).
 
-A maioria dos scripts chamam programas existentes no sistema, não
-ficarei explicando em detalhes o que faz cada comando. Se você quer
-saber o que ele
-faz, sua sintaxe e etc. procure na página man. Se você tiver alguma
-dúvida sobre o bash use: "help" ou "man bash". A manpage é bastante
-completa (e grande também)! Use-a como referência.
+É de extrema importância que você vá praticando assim que aprender algo novo,
+isso ajuda a se familiarizar e memorizar as coisas. Só ficar lendo não vai ajudar muito.
 
 Todos os códigos presentes nesse texto podem ser encontrados em https://github.com/meleu/bashscripting/tree/master/src.
 
+
+## Versão do bash
+
 **Atenção nas versões do bash em que eu fiz os meus testes**, pois em versões antigas
-algumas coisas podem não funcionar. 
+recursos podem não funcionar. Resumidamente: se você tem da versão 4 em diante, está em boas
+condições.
 
 Esta é a versão que usei para testar no Cygwin:
 
@@ -82,28 +98,15 @@ GNU bash, versão 4.3.46(1)-release (x86_64-pc-linux-gnu)
 
 ## Agradecimentos
 
-Vou manter os agradecimentos do texto original, mas também gostaria de agradecer
-ao pessoal do projeto [RetroPie](https://retropie.org.uk/), com quem eu aprendi
-vários macetinhos mais modernos sobre bash scripting.
+Quando comecei a contribuir com o projeto [RetroPie](https://retropie.org.uk/),
+minha habilidade com bash avançou exponencialmente. O principal agradecimento
+vai para eles.
 
-A medida que este texto for recebendo contribuições, esta seção de Agradecimentos
-irá aumentando. E já temos um contribuinte para iniciar esta lista:
+A medida que este texto for recebendo contribuições, o nome dos contribuintes vai aparecendo aqui:
 
 - [Matheus Alves](https://github.com/theuves)
+- [Luan C. Redmann](https://github.com/redmanndotsh)
 
-
-**Agradecimentos do texto original:**
-
-A todos que fazem um esforcinho para publicar informações
-de qualidade em português. Especialmente para meus amiguinhos(as): lucipher, klogd, module, eSc2,
-xf, Emmanuele, Mana_Laura, NashLeon, Hekodangews, Blind_Bard, clausen,
-Renato ~~<www.linuxsecurity.com.br>~~, hts, EvilLord, aurélio (assim como eu
-também é um dinossauro-amante-do-modo-texto), às pessoas que levam a
-Unsekurity Scene ~~<http://unsekurity.virtualave.net>~~ a sério, aos camaradas
-da EoH Team ~~<http://eoh-team.tk>~~, e outros pessoas que eu posso não me
-lembrar agora mas que também são meus camaradas. É lógico que também devo
-agradecimentos a toda a comunidade Open Source, sem a qual tudo isso aqui
-não existiria! Amo vocês! =D
 
 ## Licença
 
