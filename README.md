@@ -25,14 +25,13 @@ atualizando este livro):
 - [🍺 R$ 10](https://picpay.me/meleuzord/10.00)
 - [🎁 Definir valor](https://picpay.me/meleuzord/)
 
-Se você não tem conta no PicPay, pode criar a sua [através deste link](https://www.picpay.com/convite?UMYSKN) que você ganha R$ 10 de cashback no seu primeiro pagamento.
+Se você não tem conta no PicPay, pode criar a sua [**através deste link**](https://www.picpay.com/convite?UMYSKN) que você ganha R$ 10 de cashback no seu primeiro pagamento.
 
 ### PayPal
 
 <a href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=ZZ3ZN4T7D65EY">
-  <img src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" alt="Donate with PayPal" align="center"/>
+  <img src="https://www.paypalobjects.com/pt_BR/BR/i/btn/btn_donateCC_LG.gif" alt="Donate with PayPal" align="center"/>
 </a>
-
 
 ## Apresentação
 
